@@ -1,0 +1,305 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title><?php echo C('site_name');?> - <?php echo C('site_name');?>-微信公共帐号营销平台</title>
+<meta name="keywords" content="<?php echo C('site_name');?>"/>
+<meta name="description" content="<?php echo C('site_name');?>"/>
+<link rel="stylesheet"  type="text/css"  href="./tpl/Home/weidogs1/common/css/pc_css.css">
+<link rel="stylesheet"  type="text/css"  href="./tpl/Home/weidogs1/common/css/pc_main.css">
+<link rel="shortcut icon" href="./tpl/Home/weidogs1/common/images/favicon.ico" />
+<script type="text/javascript" src="./tpl/Home/weidogs1/common/js/jquery.min.js"></script>
+<script type="text/javascript"  src="./tpl/Home/weidogs1/common/js/vkd-index.js"></script>
+<script type="text/javascript"  src="./tpl/Home/weidogs1/common/js/vkd-case.js"></script>
+</head>
+<body ><a id="returnTop"  href="javascript:;"  style="bottom: -200px;">回到顶部</a> 
+
+<div  class="header">
+	<div  class="head">
+		<div  class="logo fl">
+			<a  href="/" title="多用户微信营销服务平台">
+			<img  src="<?php echo C('site_logo');?>"  height="52"></a><span>beta2.0</span>
+			
+		</div>
+		<div  class="menu fr">
+			<form action="/index.php?m=Users&a=checklogin" method="post">
+				<div  class="login_fm hide">
+					<div  class="cover">
+					</div>
+									<div  class="pccode"  id="pccode">
+						<img  src="./tpl/Home/weidogs1/common/images/weixin.gif">
+						<p>扫码关注，自助审核</p>
+					</div>
+					<div  class="login">
+						<div  class="login_title">
+							<span  class="checktip Validform_checktip fr"></span><strong>会员登录</strong>
+						</div>
+						<form  method="post"   name="frm2">
+							<div  class="input_box input_id">
+								<input  name="username"  type="text"  placeholder="输入用户名">
+							</div>
+							<div  class="input_box input_pw">
+								<input  name="password"  type="password"  placeholder="输入密码">
+							</div>
+
+							<div  class="login_button">
+								<input  type="submit"  name="button"  id="button"  value="登录">
+							</div>
+						<input type="hidden" name="__hash__" value="b9bb9a363f876a0b95367946cc0d8fab_2cfc630e49687d57bc6995fc8f24d390" /></form>
+					</div>
+				</div>
+
+			<input type="hidden" name="__hash__" value="b9bb9a363f876a0b95367946cc0d8fab_2cfc630e49687d57bc6995fc8f24d390" /></form>
+
+			<ul  class="login_box fr">
+				<li><a  href="javascript:void(0);"   onclick="loginFmFun()" class="blue_btn"  id="go">登录</a></li>
+					<li><a href="/index.php?g=Home&m=Index&a=reg" >注册</a></li>
+							</ul>
+			<ul  class="fr"  id="link">
+				<li> <a href="/index.php?g=Home&m=Index&a=index"   > 首页 </a> </li>
+				<li> <a href="/index.php?g=Home&m=Index&a=about"   > 关于我们 </a> </li>
+				<li> <a href="/index.php?g=Home&m=Index&a=help"    > 帮助中心 </a> </li>				
+				
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+
+	function loginFmFun(){
+		$(".login_fm").show();
+	}
+
+	$(".cover").click(function(){
+		$(".login_fm").hide();
+		clearInterval(interval_id);
+	});
+
+
+window.onload = function() {
+
+	var aLink = document.getElementById("link").getElementsByTagName("a");
+	var cfg	 =	{
+					beginColor:0xeeeeee,//十六进制,字体开始的色
+					endColor:0xffffff,//十六进制,字体结束的色
+					duration:15//时长
+				};
+
+	for(var len = aLink.length; len--;) {
+		aLink[len].onmouseover = function() {
+			setColor(this, 0)
+		};
+		
+		aLink[len].onmouseout = function() {
+			setColor(this, cfg.duration)
+		};
+	}	
+	
+	function setColor(obj, num) {
+		clearInterval(obj.timer);
+		var i = num;
+		obj.timer = setInterval(function() {
+			obj.style.color = getColor(i)
+			num ? i-- : i++;
+			if(i < 0 || i > cfg.duration) clearInterval(obj.timer)
+		}, 30)
+	}
+	
+	function getColor(i) {
+		var br = Math.floor(cfg.beginColor/(256*256)),
+			bg = Math.floor((cfg.beginColor%(256*256))/256),
+			bb = Math.floor(cfg.beginColor%256),
+			er = Math.floor(cfg.endColor/(256*256)),
+			eg = Math.floor((cfg.endColor%(256*256))/256),
+			eb = Math.floor(cfg.endColor%256),
+			r = br+(er-br)*i/cfg.duration,
+			g = bg+(eg-bg)*i/cfg.duration,
+			b = bb+(eb-bb)*i/cfg.duration,
+			re="#" + toHex(r)+toHex(g)+toHex(b);
+			//console.log(re);
+		
+		return re;
+	}
+	
+	function toHex(n) {
+		n = Math.round(n);
+		n = (n.toString(16).length<2 ? "0"+n.toString(16) : n.toString(16)).toUpperCase();
+		return n;
+	}
+}
+
+
+$("#go").one("click",function(){
+    $("#pccode").animate({right:'+312px'},"slow")
+});
+
+</script>
+
+<script  type="text/javascript"  src="./tpl/Home/weidogs1/common/js/top.js"></script>
+
+
+<div  class="container">
+	<div  class="banner_box guide_banner">
+		<h1>突破我微信公众平台限制，众多智能服务瞬间开启！</h1>
+	</div>
+	<div  class="guide_wkd">
+		<h1>基础功能</h1>
+		<ul  class="ico_list">
+			<li>
+				<div  class="ico">
+					<a href="/index.php?g=Home&m=Index&a=fc">
+					<img  src="./tpl/Home/weidogs1/common/images/icon_wgw.jpg">
+					</a>
+				</div>
+				<div  class="desc">
+					<h2><a >微官网</a></h2>
+					<p>设置分类添加图文并选择模版，就能生成一个漂亮的微信网站。</p>
+				</div>
+			</li>
+			<li>
+				<div  class="ico">
+					<a  href="/index.php?g=Home&m=Index&a=fc">
+					<img  src="./tpl/Home/weidogs1/common/images/icon_wsc.jpg">
+					</a>
+				</div>
+				<div  class="desc">
+					<h2><a href="/index.php?g=Home&m=Index&a=fc" >微商城</a></h2>
+					<p>直接发布产品及信息，实现在线交易。</p>
+				</div>
+			</li>
+			<li>
+				<div  class="ico">
+					<a  href="/index.php?g=Home&m=Index&a=fc">
+					<img  src="./tpl/Home/weidogs1/common/images/icon_whd.png">
+					</a>
+				</div>
+				<div  class="desc">
+					<h2><a>微互动</a></h2>
+					<p></p>
+				</div>
+			</li>
+			<li>
+				<div  class="ico">
+					<a href="/index.php?g=Home&m=Index&a=fc">
+					<img  src="./tpl/Home/weidogs1/common/images/icon_hyk.jpg">
+					</a>
+				</div>
+				<div  class="desc">
+					<h2><a href="/index.php?g=Home&m=Index&a=fc" >微会员</a></h2>
+					<p></p>
+				</div>
+			</li>
+			<li>
+				<div  class="ico">
+					<a  href="/index.php?g=Home&m=Index&a=fc">
+					<img  src="./tpl/Home/weidogs1/common/images/icon_zdy.png">
+					</a>
+				</div>
+				<div  class="desc">
+					<h2><a href="/index.php?g=Home&m=Index&a=fc" >自定义菜单</a></h2>
+					<p>无需输入关键词触发回复，直接点击菜单就能查看相关内容。</p>
+				</div>
+			</li>
+			<li>
+				<div  class="ico">
+					<a  href="/index.php?g=Home&m=Index&a=fc">
+					<img  src="./tpl/Home/weidogs1/common/images/icon_lbs.jpg">
+					</a>
+				</div>
+				<div  class="desc">
+					<h2><a href="/index.php?g=Home&m=Index&a=fc">LBS回复</a></h2>
+					<p>粉丝发送自己的位置之后，回复每个网点的距离及地图导航。</p>
+				</div>
+			</li>
+		</ul>
+		<h1>营销推广</h1>
+		<ul  class="ico_list">
+			<li>
+				<div  class="ico">
+					<a href="/index.php?g=Home&m=Index&a=fc">
+					<img  src="./tpl/Home/weidogs1/common/images/icon_yhq.jpg">
+					</a>
+				</div>
+				<div  class="desc">
+					<h2><a href="/index.php?g=Home&m=Index&a=fc">优惠券</a></h2>
+					<p>直接生成个性优惠券，设置优惠券内容。</p>
+				</div>
+			</li>
+			<li>
+				<div  class="ico">
+					<a href="/index.php?g=Home&m=Index&a=fc">
+					<img  src="./tpl/Home/weidogs1/common/images/icon_dzp.jpg">
+					</a>
+				</div>
+				<div  class="desc">
+					<h2><a href="/index.php?g=Home&m=Index&a=fc">大转盘</a></h2>
+					<p>直接发布幸运大转盘活动，设置活动内容、奖项及中将比例。</p>
+				</div>
+			</li>
+			<li>
+				<div  class="ico">
+					<a  href="/index.php?g=Home&m=Index&a=fc">
+					<img  src="./tpl/Home/weidogs1/common/images/icon_ggl.jpg">
+					</a>
+				</div>
+				<div  class="desc">
+					<h2><a>刮刮乐</a></h2>
+					<p>通过逼真的刮卡体验，增强用户粘性。</p>
+				</div>
+			</li>
+		</ul>
+		<h1>行业解决方案</h1>
+		<ul  class="ico_list">
+			<li>
+				<div  class="ico">
+					<a href="/index.php?g=Home&m=Index&a=fc">
+					<img  src="./tpl/Home/weidogs1/common/images/icon_wyy.jpg">
+					</a>
+				</div>
+				<div  class="desc">
+					<h2><a href="/index.php?g=Home&m=Index&a=fc" >微预约</a></h2>
+					<p></p>
+				</div>
+			</li>
+			<li> </li>
+			<li> </li>
+		</ul>
+		<div  class="more"><a href="/index.php?g=Home&m=Index&a=fc" >查看更多功能介绍</a></div>
+	</div>
+</div>
+<div  class="footer"  id="link">
+	<div  class="foot">
+		<div class="footer_text">
+			<ul>
+				<li><a>服务条款</a></li>
+				<li><a>意见反馈</a></li>
+				<li><a>公司简介</a></li>
+				<li><span></span><?php echo C('site_email');?></li>
+				<li><span  class="ico2"></span>18605283199</li>
+				<li>Copyright &copy; 2016 <?php echo C('site_name');?> 版权所有 All Rights Reserved.  沪ICP备1235454号-1</li>
+			</ul>
+		<div  class="code">
+			<img  src="./tpl/Home/weidogs1/common/images/weixin.gif"  width="162"  height="162"  class="wx_img"  id="wx_img_1">
+			<img  src="./tpl/Home/weidogs1/common/images/weixin.gif"  width="162"  height="162"  class="wx_img_on"  id="wx_img_2">
+		</div>
+		</div>
+	</div>
+</div>
+
+ 
+<script  type="text/javascript"  src="./tpl/Home/weidogs1/common/js/Validform_v5.3.2_min.js"></script> 
+<script  type="text/javascript">
+$(".demoform").Validform({
+	tiptype:3,
+	datatype:{
+		"telephone": /^[\d+\-?]+$/
+	}
+});
+$(function(){
+	$("#wx_img_1").bind("mouseenter",function(){
+		$("#wx_img_2").show();
+	});
+	$("#wx_img_1").bind("mouseleave",function(){
+		$("#wx_img_2").hide();
+	});
+});
+</script>
+</body></html>

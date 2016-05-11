@@ -1,0 +1,160 @@
+<include file="Public:head"/>
+<include file="School:menu"/>
+<script>
+    jQuery(document).ready(function(){
+      jQuery("#formID").validationEngine();
+    });
+    </script>
+<style>
+.maroon{color: red;}
+</style>
+<div class="content">
+<div class="cLineB">
+  <h4>当前位置：微学校 >> <a href="{dogcms::U('School/assess',array('token'=>$token))}">教师管理</a> >> 班级添加</h4>
+ </div>
+
+    <div class="msgWrap bgfc" style="margin-top:10px;">
+      <form class="form" id="formID" method="post" action="" target="_top" enctype="multipart/form-data">
+
+        <table class="userinfoArea" style=" margin:0;" border="0" cellspacing="0" cellpadding="0" width="100%">
+            <tbody>
+            <tr>
+                    <th width="120">教师姓名:</th>
+                    <td>
+                        <h1><span class="maroon">{dogcms:$teachers['tname']}</span></h1>
+                    </td>
+            </tr>
+            <tr>
+                    <th width="120">任教班级:</th>
+                    <td>
+                     <select name="bj_id" id="bj_id">
+                    <volist name="li_theclass" id="list">
+                        <option value="{dogcms:$list['sid']}" <if condition="$tcourse['bj_id'] eq $list['sid']"> selected </if>>{dogcms:$list['sname']}</option>
+                    </volist>
+                    </select>
+                    <span class="maroon">*</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="120">任教科目:</th>
+                    <td>
+                    <select name="km_id" id="km_id">
+                    <volist name="li_subject" id="list">
+                    <option value="{dogcms:$list['sid']}" <if condition="$tcourse['km_id'] eq $list['sid']"> selected </if> >{dogcms:$list['sname']}</option>
+                    </volist>
+                    </select>
+                    <span class="maroon">*</span>
+                    </td>
+                </tr>
+                 <tr>
+                    <th width="120">任教学期:</th>
+                    <td>
+                   <select name="xq_id" id="xq_id">
+                    <volist name="li_semester" id="list">
+                    <option value="{dogcms:$list['sid']}" <if condition="$tcourse['xq_id'] eq $list['sid']"> selected </if> >{dogcms:$list['sname']}</option>
+                    </volist>
+                    </select>
+                    <span class="maroon">*</span>
+                    </td>
+                </tr>
+                 <!--
+                	作者：390750213@qq.com
+                	时间：2016-03-24
+                	描述：
+               
+                <tr>
+                    <th width="120">任教时段:</th>
+                    <td>
+                    <select name="sd_id" id="sd_id">
+                    <volist name="li_timeframe" id="list">
+                    <option value="{dogcms:$list['sid']}" <if condition="$tcourse['sd_id'] eq $list['sid']"> selected </if> >{dogcms:$list['sname']}</option>
+                    </volist>
+                    </select>
+                    <span class="maroon">*</span>
+                    </td>
+                </tr>
+               
+              
+                <tr>
+                    <th width="120">场地安排:</th>
+                    <td>
+                    <select name="cd_id" id="cd_id">
+                    <volist name="li_adress" id="list">
+                    <option value="{dogcms:$list['sid']}" <if condition="$tcourse['cd_id'] eq $list['sid']"> selected </if> >{dogcms:$list['sname']}</option>
+                    </volist>
+                    </select>
+                    <span class="maroon">*</span>
+                    </td>
+                </tr>
+                  -->
+                <tr>
+                   <th><if condition="$tcourse['id'] neq ''"><input type="text" hidden name="id" value="{dogcms:$tcourse['id']}"></if></th>
+                   <input type="text" name="tid" value="{dogcms:$teachers['tid']}" hidden>
+                    <td>
+                  <button type="submit" name="button" class="btnGreen">保存</button>
+                    </td>
+                    </tr>
+                <tr>
+                     <th></th>
+                    <td>
+                   <a href="{dogcms::U('School/assess',array('token'=>session('token')))}" class="btnGray vm">取消</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+          <div class="msgWrap">
+
+
+          <!-- <input name="delall"  type="hidden" value="del" />
+           <input name="wxid"  type="hidden" value="gh_423dwjkewad" /> -->
+            <TABLE class="ListProduct" border="0" cellSpacing="0" cellPadding="0" width="100%">
+              <THEAD>
+                <TR>
+                <th>学号</th>
+                <TH>姓名</TH>
+                <TH>年龄</TH>
+                <TH>性别</TH>
+                <TH>出生</TH>
+                <TH>家庭住址</TH>
+                <TH>手机</TH>
+                <TH>固话</TH>
+                <TH>班级</TH>
+                <TH>报名时间</TH>
+                <TH>生效时间</TH>
+                <TH>终止时间</TH>
+              <TH >操作</TH>
+                </TR>
+              </THEAD>
+              <TBODY>
+                <TR></TR>
+<volist id="list" name="students">
+                <TR>
+                  <td>{dogcms:$list['id']}</td>
+                  <TD>{dogcms:$list['s_name']}</TD>
+                  <TD>{dogcms:$list['age']}</TD>
+                  <TD><if condition="$list['sex'] eq 1">男</if><if condition="$list['sex'] eq 2">女</if></TD>
+                  <TD>{dogcms:$list['birthdate']}</TD>
+                  <TD>{dogcms:$list['area_addr']}</TD>
+                  <TD>{dogcms:$list['mobile']}</TD>
+                  <TD>{dogcms:$list['homephone']}</TD>
+                  <TD>{dogcms:$list['bj_nmae']}</TD>
+                  <TD>{dogcms:$list['createdate']|date="Y-m-d",###}</TD>
+                  <TD><if condition="$list['seffectivetime'] neq '0000-00-00'">{dogcms:$list['seffectivetime']}<else/>---</if></TD>
+                 <TD><if condition="$list['stheendtime'] neq '0000-00-00'">{dogcms:$list['stheendtime']}<else/>---</if></TD>
+                 <TD>
+<a href="{dogcms::U('School/student_add',array('token'=>$token,'id'=>$list['id'],'type'=>'edit'))}"><font color="red">编辑</font></a>
+<a class="btn" href="{dogcms::U('School/del_item',array('token'=>$vo['token'],'id'=>$list['id'],'deltype'=>'students'))}" onclick="return(confirm('确定要删除吗？'))"  title="删除"><font color="#CCC7C7">删除</font></a>
+<a href="{dogcms::U('School/student_score',array('token'=>$token,'id'=>$list['id']))}">录成绩</a>
+                 </TD>
+                </TR>
+</volist>
+              </TBODY>
+            </TABLE>
+          </div>
+    </form>
+ 
+         
+   
+</div>
+
+<include file="Public:footer"/>

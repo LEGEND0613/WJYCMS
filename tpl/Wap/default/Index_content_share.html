@@ -1,0 +1,16 @@
+
+		<script type="text/javascript">
+
+			window.shareData = {  
+				"moduleName":"Img",
+				"moduleID": '{dogcms:$_GET["id"]|intval}',
+				"imgUrl": "{dogcms:$res.pic}", 
+				"timeLineLink": "{dogcms:$f_siteUrl}{dogcms::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token'],'classid'=>$_GET['classid'],'id'=>intval($_GET['id'])))}",
+				"sendFriendLink": "{dogcms:$f_siteUrl}{dogcms::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token'],'classid'=>$_GET['classid'],'id'=>intval($_GET['id'])))}",
+				"weiboLink": "{dogcms:$f_siteUrl}{dogcms::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token'],'classid'=>$_GET['classid'],'id'=>intval($_GET['id'])))}",
+				"tTitle": "{dogcms:$res.title}-{dogcms:$tpl.wxname}",
+				"tContent": "{dogcms:$res.text|htmlspecialchars_decode|strip_tags|trim|mb_substr=###,0,30,'utf-8'|str_replace="\\r\\n",' ',###|str_replace='"','',###}"
+			};
+		</script>	
+
+{dogcms:$shareScript}

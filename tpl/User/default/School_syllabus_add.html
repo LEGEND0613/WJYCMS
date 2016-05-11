@@ -1,0 +1,123 @@
+<include file="Public:head"/>
+<include file="School:menu"/>
+<link rel="stylesheet" href="{dogcms::STATICS}/kindeditor/themes/default/default.css" />
+<link rel="stylesheet" href="{dogcms::STATICS}/kindeditor/plugins/code/prettify.css" />
+<script src="{dogcms::STATICS}/kindeditor/kindeditor.js" type="text/javascript"></script>
+<script src="{dogcms::STATICS}/kindeditor/lang/zh_CN.js" type="text/javascript"></script>
+<script src="{dogcms::STATICS}/kindeditor/plugins/code/prettify.js" type="text/javascript"></script>
+<script src="{dogcms::STATICS}/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="{dogcms::STATICS}/artDialog/plugins/iframeTools.js"></script>
+<script src="{dogcms::STATICS}/upyun.js"></script>
+
+ <script>
+
+var editor;
+KindEditor.ready(function(K) {
+editor = K.create('#info', {
+resizeType : 1,
+allowPreviewEmoticons : false,
+allowImageUpload : true,
+uploadJson : '/index.php?g=User&m=Upyun&a=kindedtiropic',
+items : [
+'source','undo','plainpaste','wordpaste','clearhtml','quickformat','selectall','fullscreen','fontname', 'fontsize','subscript','superscript','indent','outdent','|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline','hr']
+});
+
+});
+</script>
+<script>
+    jQuery(document).ready(function(){
+      jQuery("#formID").validationEngine();
+    });
+    </script>
+<style>
+.maroon{color: red;}
+</style>
+<div class="content">
+<div class="cLineB">
+  <h4>当前位置：微学校 >> <a href="{dogcms::U('School/syllabus',array('token'=>$token))}">课程管理</a> >> <if condition="$type eq 'edit'">编辑<else/>新增</if>课程</h4>
+ </div>
+
+    <div class="msgWrap bgfc" style="margin-top:10px;">
+      <form class="form" id="formID" method="post" action="" target="_top" enctype="multipart/form-data">
+
+        <table class="userinfoArea" style=" margin:0;" border="0" cellspacing="0" cellpadding="0" width="100%">
+            <tbody>
+            
+           
+                <tr>
+                    <th width="120">任教星期:</th>
+                    <td>
+                   <select name="xq_id" id="xq_id">
+                    <volist name="li_week" id="list">
+                    <option value="{dogcms:$list['sid']}" <if condition="$tcourse['xq_id'] eq $list['sid']"> selected </if> >{dogcms:$list['sname']}</option>
+                    </volist>
+                    </select>
+                    <span class="maroon">*</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="120">任教时段:</th>
+                    <td>
+                    <select name="sd_id" id="sd_id">
+                    <volist name="li_timeframe" id="list">
+                    <option value="{dogcms:$list['sid']}" <if condition="$tcourse['sd_id'] eq $list['sid']"> selected </if> >{dogcms:$list['sname']}</option>
+                    </volist>
+                    </select>
+                    <span class="maroon">*</span>
+                    </td>
+                </tr>
+                 <tr>
+                    <th width="120">任教班级:</th>
+                    <td>
+                     <select name="bj_id" id="bj_id">
+                    <volist name="li_tcourse" id="list">
+                        <option value="{dogcms:$list['bj_id']}" <if condition="$tcourse['bj_id'] eq $list['bj_id']"> selected </if>>{dogcms:$list['sname']}:{dogcms:$list['tname']}</option>
+                    </volist>
+                    </select>
+                    <span class="maroon">*</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="120">场地安排:</th>
+                    <td>
+                    <select name="cd_id" id="cd_id">
+                    <volist name="li_adress" id="list">
+                    <option value="{dogcms:$list['sid']}" <if condition="$tcourse['cd_id'] eq $list['sid']"> selected </if> >{dogcms:$list['sname']}</option>
+                    </volist>
+                    </select>
+                    <span class="maroon">*</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="120">班主任:</th>
+                    <td>              
+                         <select name="bz_id" id="bz_id">
+                        <volist name="li_teachers" id="list">
+                        <option value="{dogcms:$list['tid']}" <if condition="$tcourse['bz_id'] eq $list['tid']"> selected </if>>{dogcms:$list['tname']}</option>
+                    </volist>
+                    </select>
+                    <span class="maroon">*</span>
+                    </td>
+            </tr>
+                <tr>
+                   <th></th>
+                  
+                    <td>
+                  <button type="submit" name="button" class="btnGreen">保存</button>
+                    </td>
+                    </tr>
+                <tr>
+                     <th></th>
+                    <td>
+                   <a href="{dogcms::U('School/syllabus',array('token'=>session('token')))}" class="btnGray vm">取消</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+ 
+         
+   
+</div>
+
+<include file="Public:footer"/>

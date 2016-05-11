@@ -1,0 +1,594 @@
+[ 2016-05-05T00:22:47+08:00 ] 101.226.125.19 /
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: cms.yulihome.comnomsite D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.032227s ]
+NOTIC: [8] Undefined index: cms.yulihome.com D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 376 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Constant STATICS already defined D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_customs` [ RunTime:0.034181s ]
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.036134s ]
+SQL: SELECT * FROM `tp_images` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 3 ) LIMIT 1   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 5 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\webset\CMS\dogcms\Lib\Action\Home\IndexAction.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.024415s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.025392s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.022461s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.092777s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.011719s ]
+SQL: SELECT * FROM `tp_news` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.419938s ]
+INFO: [ view_template ] --END-- [ RunTime:0.020509s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.440447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048830s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.489277s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.491230s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.504903s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.506856s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.023438s ]
+SQL: SHOW COLUMNS FROM `tp_susceptible` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_susceptible` LIMIT 1   [ RunTime:0.000976s ]
+SQL: SELECT `word` FROM `tp_susceptible` WHERE ( `state` = 1 )  [ RunTime:0.000977s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/0/6/067efd6ffbb9b42e963ddba7e754f7e8.php): No such file or directory D:\webset\CMS\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.560569s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.564475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-05-05T08:23:01+08:00 ] 121.42.0.34 /
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.064455s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.004883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: cms.yulihome.comnomsite D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.021485s ]
+NOTIC: [8] Undefined index: cms.yulihome.com D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 376 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000976s ]
+NOTIC: [8] Constant STATICS already defined D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_customs` [ RunTime:0.039064s ]
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.062503s ]
+SQL: SELECT * FROM `tp_images` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 5 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\webset\CMS\dogcms\Lib\Action\Home\IndexAction.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.015626s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.013673s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.020508s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.014649s ]
+SQL: SELECT * FROM `tp_news` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.393569s ]
+INFO: [ view_template ] --END-- [ RunTime:0.012696s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.406265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054690s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.460955s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.462908s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.464861s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.465838s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005859s ]
+SQL: SHOW COLUMNS FROM `tp_susceptible` [ RunTime:0.001954s ]
+SQL: SELECT * FROM `tp_susceptible` LIMIT 1   [ RunTime:0.001953s ]
+SQL: SELECT `word` FROM `tp_susceptible` WHERE ( `state` = 1 )  [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/0/6/067efd6ffbb9b42e963ddba7e754f7e8.php): No such file or directory D:\webset\CMS\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.502949s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.504902s ]
+INFO: [ app_end ] --END-- [ RunTime:0.018555s ]
+
+[ 2016-05-05T13:31:54+08:00 ] 180.175.51.195 /index.php?g=Wap&m=School&a=index&token=dzqmpt1457533711&diymenu=1&code=011FI6HW0dWceQ1XsXHW0bmZGW0FI6Hd&state=
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `token` = 'dzqmpt1457533711' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000976s ]
+NOTIC: [2048] Non-static method getUserInfoModule::index() should not be called statically, assuming $this from incompatible context D:\webset\CMS\dogcms\Lib\Action\WapAction.class.php 第 147 行.
+NOTIC: [8] Undefined index: ali D:\webset\CMS\dogcms\Lib\Action\WapAction.class.php 第 149 行.
+NOTIC: [8] Undefined index: token_oauthed_dzqmpt1457533711 D:\webset\CMS\dogcms\Lib\Action\WapAction.class.php 第 159 行.
+NOTIC: [8] Undefined index: token_openid_dzqmpt1457533711 D:\webset\CMS\dogcms\Lib\Action\WapAction.class.php 第 160 行.
+SQL: SHOW COLUMNS FROM `tp_weixin_account` [ RunTime:0.001954s ]
+SQL: SELECT * FROM `tp_weixin_account` WHERE ( `type` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.002929s ]
+SQL: UPDATE `tp_wxuser` SET `type`='0' WHERE 1 [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: wecha_id D:\webset\CMS\dogcms\Lib\Action\WapAction.class.php 第 200 行.
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_weixin_account` WHERE ( `type` = 1 ) LIMIT 1   [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: wecha_id D:\webset\CMS\dogcms\Lib\Action\WapAction.class.php 第 251 行.
+NOTIC: [8] Undefined index: wecha_id D:\webset\CMS\dogcms\Lib\Action\WapAction.class.php 第 251 行.
+NOTIC: [8] Undefined variable: fansInfo D:\webset\CMS\dogcms\Lib\Action\WapAction.class.php 第 252 行.
+NOTIC: [2] curl_setopt(): You must pass either an object or an array with the CURLOPT_HTTPHEADER, CURLOPT_QUOTE, CURLOPT_HTTP200ALIASES and CURLOPT_POSTQUOTE arguments D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 275 行.
+NOTIC: [8] Undefined index: errcode D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 292 行.
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `fakeopenid` = 'oaQjashgALQVRByFGYpJjPAuH1Hk' ) LIMIT 1   [ RunTime:0.000976s ]
+NOTIC: [2] curl_setopt(): You must pass either an object or an array with the CURLOPT_HTTPHEADER, CURLOPT_QUOTE, CURLOPT_HTTP200ALIASES and CURLOPT_POSTQUOTE arguments D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 275 行.
+NOTIC: [8] Undefined index: errcode D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 292 行.
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `wecha_id` = 'oaQjashgALQVRByFGYpJjPAuH1Hk' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.001954s ]
+SQL: UPDATE `tp_userinfo` SET `wechaname`='HAPPY',`sex`='2',`portrait`='http://wx.qlogo.cn/mmopen/Q3auHgzwzM70YBVJ33WOAud6l4ylXKqK3lRUcmPraicrjpkicfnLlGCfPdlwQ4ZCQesm7ciakb0Csuho4YlF7APQw/0',`token`='dzqmpt1457533711',`wecha_id`='oaQjashgALQVRByFGYpJjPAuH1Hk',`city`='松江',`province`='上海',`truename`='HAPPY',`fakeopenid`='oaQjashgALQVRByFGYpJjPAuH1Hk' WHERE ( `id` = 16 ) [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: yundabao D:\webset\CMS\dogcms\Lib\Action\WapAction.class.php 第 413 行.
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `wecha_id` = 'oaQjashgALQVRByFGYpJjPAuH1Hk' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_wechat_group_list` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_wechat_group_list` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `openid` = 'oaQjashgALQVRByFGYpJjPAuH1Hk' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_home` [ RunTime:0.014649s ]
+SQL: SELECT * FROM `tp_home` WHERE ( `token` = 'dzqmpt1457533711' ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_catemenu` [ RunTime:0.059573s ]
+SQL: SELECT * FROM `tp_catemenu` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.016602s ]
+SQL: SELECT * FROM `tp_company` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.015625s ]
+SQL: SELECT * FROM `tp_weixin_account` WHERE ( `type` = 1 ) LIMIT 1   [ RunTime:0.000976s ]
+NOTIC: [2] curl_setopt(): You must pass either an object or an array with the CURLOPT_HTTPHEADER, CURLOPT_QUOTE, CURLOPT_HTTP200ALIASES and CURLOPT_POSTQUOTE arguments D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 275 行.
+NOTIC: [2] curl_setopt(): You must pass either an object or an array with the CURLOPT_HTTPHEADER, CURLOPT_QUOTE, CURLOPT_HTTP200ALIASES and CURLOPT_POSTQUOTE arguments D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 275 行.
+NOTIC: [8] Undefined index: errcode D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 292 行.
+NOTIC: [8] Undefined index: errcode D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 143 行.
+NOTIC: [2] curl_setopt(): You must pass either an object or an array with the CURLOPT_HTTPHEADER, CURLOPT_QUOTE, CURLOPT_HTTP200ALIASES and CURLOPT_POSTQUOTE arguments D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 275 行.
+SQL: SELECT `fakeopenid` FROM `tp_userinfo` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `wecha_id` = 'oaQjashgALQVRByFGYpJjPAuH1Hk' ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_school_set_index` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_school_set_index` WHERE ( `token` = 'dzqmpt1457533711' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_school_cat` [ RunTime:0.015626s ]
+SQL: SELECT `url`,icon as img,`name` FROM `tp_school_cat` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `is_show` = '1' ) ORDER BY sort desc,id desc  [ RunTime:0.009766s ]
+SQL: SELECT * FROM `tp_school_set_index` WHERE ( `token` = 'dzqmpt1457533711' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_photo_list` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_photo_list` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `pid` = 1 ) ORDER BY sort desc  [ RunTime:0.017579s ]
+NOTIC: [8] Undefined index: url D:\webset\CMS\dogcms\Lib\Action\Wap\SchoolAction.class.php 第 57 行.
+NOTIC: [8] Undefined index: url D:\webset\CMS\dogcms\Lib\Action\Wap\SchoolAction.class.php 第 57 行.
+NOTIC: [8] Undefined index: url D:\webset\CMS\dogcms\Lib\Action\Wap\SchoolAction.class.php 第 57 行.
+NOTIC: [8] Undefined index: url D:\webset\CMS\dogcms\Lib\Action\Wap\SchoolAction.class.php 第 57 行.
+NOTIC: [8] Undefined index: url D:\webset\CMS\dogcms\Lib\Action\Wap\SchoolAction.class.php 第 57 行.
+SQL: SELECT * FROM `tp_home` WHERE ( `token` = 'dzqmpt1457533711' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `url`,icon as img,`name` FROM `tp_school_cat` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `is_show` = '1' ) ORDER BY sort desc,id desc  [ RunTime:0.000976s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.224656s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: zd D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 4 行.
+NOTIC: [8] Undefined variable: home D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 289 行.
+NOTIC: [8] Undefined variable: home D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 454 行.
+NOTIC: [8] Undefined variable: home D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 571 行.
+NOTIC: [8] Undefined variable: home D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 687 行.
+NOTIC: [2] Division by zero D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 788 行.
+NOTIC: [8] Undefined index: type D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 788 行.
+NOTIC: [8] Undefined index: bid D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 788 行.
+NOTIC: [8] Undefined index: wecha_id D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 788 行.
+NOTIC: [2] Division by zero D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 789 行.
+NOTIC: [8] Undefined index: type D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 789 行.
+NOTIC: [8] Undefined index: bid D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 789 行.
+NOTIC: [8] Undefined index: wecha_id D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 789 行.
+NOTIC: [2] Division by zero D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 790 行.
+NOTIC: [8] Undefined index: type D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 790 行.
+NOTIC: [8] Undefined index: bid D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 790 行.
+NOTIC: [8] Undefined index: wecha_id D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 790 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.226609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077152s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.303761s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.305714s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.321340s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.323293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.026368s ]
+SQL: SHOW COLUMNS FROM `tp_susceptible` [ RunTime:0.001954s ]
+SQL: SELECT * FROM `tp_susceptible` LIMIT 1   [ RunTime:0.001953s ]
+SQL: SELECT `word` FROM `tp_susceptible` WHERE ( `state` = 1 )  [ RunTime:0.000976s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/0/6/067efd6ffbb9b42e963ddba7e754f7e8.php): No such file or directory D:\webset\CMS\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.363333s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+SQL: SHOW COLUMNS FROM `tp_access_count` [ RunTime:0.020509s ]
+SQL: SELECT * FROM `tp_access_count` WHERE ( `module` = 'wap' ) AND ( `controller` = 'school' ) AND ( `action` = 'index' ) AND ( `token` = 'dzqmpt1457533711' ) AND ( `create_time` >= 1462118400 ) LIMIT 1   [ RunTime:0.043947s ]
+SQL: UPDATE `tp_access_count` SET `count`=count+1,`update_time`='1462426314' WHERE ( `id` = 964 ) [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_access_count` WHERE ( `module` = 'wap' ) AND ( `controller` = 'school' ) AND ( `action` = 'index' ) AND ( `token` = 'alltoken' ) AND ( `create_time` >= 1462377600 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: DELETE FROM `tp_access_count` WHERE ( `module` = 'wap' ) AND ( `controller` = 'school' ) AND ( `action` = 'index' ) AND ( `token` = 'alltoken' ) AND ( `create_time` < 1456378314 ) [ RunTime:0.000977s ]
+SQL: INSERT INTO `tp_access_count` (`module`,`controller`,`action`,`token`,`create_time`,`update_time`) VALUES ('wap','school','index','alltoken','1462426314','1462426314') [ RunTime:0.000000s ]
+INFO: Run AccessCount Behavior [ RunTime:-1.367240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.085941s ]
+
+[ 2016-05-05T13:32:58+08:00 ] 180.175.51.195 /index.php?g=Wap&m=School&a=index&token=dzqmpt1457533711&diymenu=1&code=011FI6HW0dWceQ1XsXHW0bmZGW0FI6Hd&state=
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `token` = 'dzqmpt1457533711' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2048] Non-static method getUserInfoModule::index() should not be called statically, assuming $this from incompatible context D:\webset\CMS\dogcms\Lib\Action\WapAction.class.php 第 147 行.
+NOTIC: [8] Undefined index: ali D:\webset\CMS\dogcms\Lib\Action\WapAction.class.php 第 149 行.
+SQL: SHOW COLUMNS FROM `tp_weixin_account` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_weixin_account` WHERE ( `type` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.002930s ]
+SQL: UPDATE `tp_wxuser` SET `type`='0' WHERE 1 [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wecha_id D:\webset\CMS\dogcms\Lib\Action\WapAction.class.php 第 200 行.
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: yundabao D:\webset\CMS\dogcms\Lib\Action\WapAction.class.php 第 413 行.
+NOTIC: [8] Undefined variable: fansInfo D:\webset\CMS\dogcms\Lib\Action\WapAction.class.php 第 432 行.
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `wecha_id` = 'oaQjashgALQVRByFGYpJjPAuH1Hk' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_wechat_group_list` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_wechat_group_list` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `openid` = 'oaQjashgALQVRByFGYpJjPAuH1Hk' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_home` [ RunTime:0.001954s ]
+SQL: SELECT * FROM `tp_home` WHERE ( `token` = 'dzqmpt1457533711' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_catemenu` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_catemenu` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.001954s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_company` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_weixin_account` WHERE ( `type` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.002930s ]
+SQL: SELECT `fakeopenid` FROM `tp_userinfo` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `wecha_id` = 'oaQjashgALQVRByFGYpJjPAuH1Hk' ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_school_set_index` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_school_set_index` WHERE ( `token` = 'dzqmpt1457533711' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_school_cat` [ RunTime:0.001953s ]
+SQL: SELECT `url`,icon as img,`name` FROM `tp_school_cat` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `is_show` = '1' ) ORDER BY sort desc,id desc  [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_school_set_index` WHERE ( `token` = 'dzqmpt1457533711' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_photo_list` [ RunTime:0.001954s ]
+SQL: SELECT * FROM `tp_photo_list` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `pid` = 1 ) ORDER BY sort desc  [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: url D:\webset\CMS\dogcms\Lib\Action\Wap\SchoolAction.class.php 第 57 行.
+NOTIC: [8] Undefined index: url D:\webset\CMS\dogcms\Lib\Action\Wap\SchoolAction.class.php 第 57 行.
+NOTIC: [8] Undefined index: url D:\webset\CMS\dogcms\Lib\Action\Wap\SchoolAction.class.php 第 57 行.
+NOTIC: [8] Undefined index: url D:\webset\CMS\dogcms\Lib\Action\Wap\SchoolAction.class.php 第 57 行.
+NOTIC: [8] Undefined index: url D:\webset\CMS\dogcms\Lib\Action\Wap\SchoolAction.class.php 第 57 行.
+SQL: SELECT * FROM `tp_home` WHERE ( `token` = 'dzqmpt1457533711' ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SELECT `url`,icon as img,`name` FROM `tp_school_cat` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `is_show` = '1' ) ORDER BY sort desc,id desc  [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.093753s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: zd D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 4 行.
+NOTIC: [8] Undefined variable: home D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 289 行.
+NOTIC: [8] Undefined variable: home D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 454 行.
+NOTIC: [8] Undefined variable: home D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 571 行.
+NOTIC: [8] Undefined variable: home D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 687 行.
+NOTIC: [2] Division by zero D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 788 行.
+NOTIC: [8] Undefined index: type D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 788 行.
+NOTIC: [8] Undefined index: bid D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 788 行.
+NOTIC: [8] Undefined index: wecha_id D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 788 行.
+NOTIC: [2] Division by zero D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 789 行.
+NOTIC: [8] Undefined index: type D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 789 行.
+NOTIC: [8] Undefined index: bid D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 789 行.
+NOTIC: [8] Undefined index: wecha_id D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 789 行.
+NOTIC: [2] Division by zero D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 790 行.
+NOTIC: [8] Undefined index: type D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 790 行.
+NOTIC: [8] Undefined index: bid D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 790 行.
+NOTIC: [8] Undefined index: wecha_id D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 790 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.093753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023439s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.117192s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.117192s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.118168s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.118168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_susceptible` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_susceptible` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `word` FROM `tp_susceptible` WHERE ( `state` = 1 )  [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/0/6/067efd6ffbb9b42e963ddba7e754f7e8.php): No such file or directory D:\webset\CMS\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.123051s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+SQL: SHOW COLUMNS FROM `tp_access_count` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_access_count` WHERE ( `module` = 'wap' ) AND ( `controller` = 'school' ) AND ( `action` = 'index' ) AND ( `token` = 'dzqmpt1457533711' ) AND ( `create_time` >= 1462118400 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: UPDATE `tp_access_count` SET `count`=count+1,`update_time`='1462426378' WHERE ( `id` = 964 ) [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_access_count` WHERE ( `module` = 'wap' ) AND ( `controller` = 'school' ) AND ( `action` = 'index' ) AND ( `token` = 'alltoken' ) AND ( `create_time` >= 1462377600 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: UPDATE `tp_access_count` SET `count`=count+1,`update_time`='1462426378' WHERE ( `id` = 966 ) [ RunTime:0.000000s ]
+INFO: Run AccessCount Behavior [ RunTime:-0.123051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005860s ]
+
+[ 2016-05-05T14:23:03+08:00 ] 121.42.0.33 /
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.043947s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: cms.yulihome.comnomsite D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.038087s ]
+NOTIC: [8] Undefined index: cms.yulihome.com D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 376 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Constant STATICS already defined D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_customs` [ RunTime:0.029298s ]
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.043947s ]
+SQL: SELECT * FROM `tp_images` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 5 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\webset\CMS\dogcms\Lib\Action\Home\IndexAction.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.008789s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.018556s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.006836s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.022462s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.010743s ]
+SQL: SELECT * FROM `tp_news` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.372085s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.376968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097660s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.474628s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.488300s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.502949s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.504902s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.036134s ]
+SQL: SHOW COLUMNS FROM `tp_susceptible` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_susceptible` LIMIT 1   [ RunTime:0.001953s ]
+SQL: SELECT `word` FROM `tp_susceptible` WHERE ( `state` = 1 )  [ RunTime:0.000977s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/0/6/067efd6ffbb9b42e963ddba7e754f7e8.php): No such file or directory D:\webset\CMS\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.548849s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.552756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009766s ]
+
+[ 2016-05-05T14:37:54+08:00 ] 117.185.24.135 /
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: cms.yulihome.comnomsite D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.001953s ]
+NOTIC: [8] Undefined index: cms.yulihome.com D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 376 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_customs` [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.001954s ]
+SQL: SELECT * FROM `tp_images` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 5 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\webset\CMS\dogcms\Lib\Action\Home\IndexAction.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_news` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000977s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.061526s ]
+INFO: [ view_template ] --END-- [ RunTime:0.016602s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.078128s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052736s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.130864s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.132817s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.134771s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.136724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006836s ]
+SQL: SHOW COLUMNS FROM `tp_susceptible` [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_susceptible` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `word` FROM `tp_susceptible` WHERE ( `state` = 1 )  [ RunTime:0.000977s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/0/6/067efd6ffbb9b42e963ddba7e754f7e8.php): No such file or directory D:\webset\CMS\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.146490s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.149420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-05-05T14:37:55+08:00 ] 101.226.125.15 /
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.001954s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: cms.yulihome.comnomsite D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.001953s ]
+NOTIC: [8] Undefined index: cms.yulihome.com D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 376 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_customs` [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_images` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 4 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 5 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\webset\CMS\dogcms\Lib\Action\Home\IndexAction.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.001954s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_news` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.001954s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.033205s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.033205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.041994s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.042971s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.042971s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.042971s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `tp_susceptible` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_susceptible` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `word` FROM `tp_susceptible` WHERE ( `state` = 1 )  [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/0/6/067efd6ffbb9b42e963ddba7e754f7e8.php): No such file or directory D:\webset\CMS\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.049807s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.050784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-05T16:39:19+08:00 ] 180.175.51.195 /
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.065432s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: cms.yulihome.comnomsite D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.034181s ]
+NOTIC: [8] Undefined index: cms.yulihome.com D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 376 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_customs` [ RunTime:0.054690s ]
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.033205s ]
+SQL: SELECT * FROM `tp_images` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 5 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\webset\CMS\dogcms\Lib\Action\Home\IndexAction.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.012695s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.025392s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.014649s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.005860s ]
+SQL: SELECT * FROM `tp_news` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.387710s ]
+INFO: [ view_template ] --END-- [ RunTime:0.023439s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.411149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041994s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.453143s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.454119s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.469745s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.470721s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.024415s ]
+SQL: SHOW COLUMNS FROM `tp_susceptible` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_susceptible` LIMIT 1   [ RunTime:0.001953s ]
+SQL: SELECT `word` FROM `tp_susceptible` WHERE ( `state` = 1 )  [ RunTime:0.000977s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/0/6/067efd6ffbb9b42e963ddba7e754f7e8.php): No such file or directory D:\webset\CMS\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.521505s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.524434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005860s ]
+

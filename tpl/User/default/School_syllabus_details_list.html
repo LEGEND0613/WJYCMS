@@ -1,0 +1,134 @@
+<include file="Public:head"/>
+<include file="School:menu"/>
+
+<script src="{dogcms::RES}/js/date/WdatePicker.js"></script>
+
+<script>
+    window.onload=function(){
+        document.forms[0].reset();
+        placeFo();
+    }
+    function placeFo(){
+        document.forms[0].elements[0].focus();
+    }
+</script>
+<div class="content">
+
+          <div class="cLineB">
+              <h4 class="left">当前位置：微学校 >> 课程表</h4>  
+              <a href="{dogcms::U('School/syllabus_details_add',array('token'=>$token,'type'=>'add'))}"class="right btnGreen vm" style="margin-top:-2px">添加课程表</a>
+                <div class="cLine">
+
+            <div class="pageNavigator left">
+
+        <a href="{dogcms::U('School/syllabus_details',array('token'=>$token,'type'=>'syllabus_details'))}" class="btnGrayS vm bigbtn">
+                    <img src="tpl/User/default/common/images/pic.png" class="vm">切换图表模式
+                </a>
+
+            </div>
+              <div class="clr"></div>
+          </div>
+          <div class="cLineD">
+          	<!--
+            	作者：390750213@qq.com
+            	时间：2016-03-31
+            	描述：
+          	<div class="left">
+    <form method="post" action="{dogcms::U('School/search',array('token'=>$token))}">
+    <input type="hidden" name="searchkey[key]" value="syllabus_details">
+    	        日期:<input size="20" value="" onClick="WdatePicker()" name="searchkey[date]" class="px" style="width:80px;">&nbsp;&nbsp;&nbsp;
+        	
+           
+        	班级名称:<input size="20" value="" name="searchkey[name]" class="px" style="width:100px;">&nbsp;&nbsp;&nbsp;
+        	周天:<input size="20" value=""  name="searchkey[time]" class="px" style="width:80px;">&nbsp;&nbsp;&nbsp;
+        	姓名:<input size="20" value="" name="searchkey[phone]" class="px" style="width:80px;">&nbsp;&nbsp;&nbsp;
+        	场地:<input size="20" value="" name="searchkey[email]" class="px" style="width:100px;">&nbsp;&nbsp;&nbsp;
+        		
+        <button type="submit" name="appidsubmit" value="true" class="btnGreen vm" ><strong>查询</strong></button>
+    </form>
+    		</div>
+    		<!--
+            	作者：390750213@qq.com
+            	时间：2016-03-24
+            	描述：
+         
+            <div class="right">
+              <a href="###" onclick="$('#import').css('display','')" class="btnGrayS vm">导入数据</a>&nbsp;&nbsp;
+              <a href="{dogcms::U('School/exExcel',array('token'=>$token,'type'=>'teacher'))}" class="btnGrayS vm">导出数据</a>&nbsp;&nbsp;
+              <a href="/tpl/User/default/common/images/teacherdemo.xls" class="btnGrayS vm">下载导入模板</a>
+            </div>
+            <div  class="right" id="import" style="display:none;">
+              <form enctype="multipart/form-data" action="?g=User&m=Upyun&a=localUploadSchoolExcel" id="thumbForm" method="POST" style="font-size:14px;padding:10px 20px 10px 0px;">
+                <div>
+                  注意：不支持xlsx格式&nbsp;&nbsp;&nbsp;&nbsp;
+                选择本地文件：<input type="file" style="width:250px;border:1px solid #ddd" name="photo"></input> 
+                 <input id="submitbtn" name="doSubmit" type="submit" class="btnGreen" value="上传" onclick="this.value='上传中...'"></input> 
+                  <a href="###" onclick="$('#import').css('display','none')" class="btnGrayS vm">取消导入</a>
+                </div>
+                <input type="hidden" value="teacher" name="type" />
+              </form>
+            </div>
+               -->
+          </div>
+          <div class="msgWrap">
+           <div style="background:#fefbe4;border:1px solid #f3ecb9;color:#993300;padding:10px;margin-top:5px;">注意:支持模糊查询</div>
+
+            <TABLE class="ListProduct" border="0" cellSpacing="0" cellPadding="0" width="100%">
+              <THEAD>
+                <TR>
+                <TH>日期</TH>
+                <TH>周天</TH>
+                <TH>时段</TH>
+                <TH>班级</TH>
+                <TH>姓名</TH>
+                <TH>场地</TH>
+                <TH>班主任</TH>              
+                <TH >操作</TH>
+                </TR>
+              </THEAD>
+              <TBODY>
+                <TR></TR>
+                 <volist id="list" name="market">
+                <TR>
+               <TD>{dogcms:$list['datetime']}</TD>  
+                <TD>{dogcms:$list['xq_name']}</TD>
+                <TD>{dogcms:$list['sd_name']}</TD>
+                <TD>{dogcms:$list['bj_name']}</TD>  
+                <TD>{dogcms:$list['tname']}</TD>    
+                <TD>{dogcms:$list['cd_name']}</TD>
+                <TD>{dogcms:$list['bz_name']}</TD>               
+                  <TD>
+<a class="btn" href="{dogcms::U('School/del_item',array('token'=>$token,'id'=>$list['id'],'deltype'=>'syllabus_details'))}" onclick="return(confirm('确定要删除吗？'))"  title="删除"><font color="#CCC7C7">删除</font></a>
+                 </TD>
+                </TR>
+</volist>
+              </TBODY>
+            </TABLE>
+          </div>
+          <div class="cLine">
+            <div class="pageNavigator right">
+                <div class="pages">{dogcms:$page}</div>
+              </div>
+            <div class="clr"></div>
+          </div>
+        </div>
+
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+
+// function checkAll(form, name) {
+// for(var i = 0; i < form.elements.length; i++) {
+// var e = form.elements[i];
+// if(e.name.match(name)) {
+// e.checked = form.elements['chkall'].checked;
+// }
+// }
+// }
+  </script>
+  <!--底部-->
+    </div>
+
+<include file="Public:footer"/>

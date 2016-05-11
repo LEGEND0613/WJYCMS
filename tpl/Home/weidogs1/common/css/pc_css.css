@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+body { margin: 0; padding: 0; font-size: 14px; font-family: "microsoft yahei",Arial, Helvetica, sans-serif; color: #666; line-height: 22px; background: #FFFFFF }
+form, ul, li, h1, h2, h3, h4, h5 { margin: 0; padding: 0; list-style: none; }
+a { text-decoration: none; color: #666; outline: none; }
+a:hover{ color:#000}
+img { border: 0; }
+.clear { clear: both; height: 0; width: 100%; }
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clearfix { zoom: 1; clear: both; }
+.pad_top50{ padding-top:50px;}
+
+.container { width: 100%; margin: 81px auto 0; }
+.wrap{ width:1000px; margin:0 auto;}
+.fl { float: left; }
+.fr { float: right; }
+hr { border: none; border-bottom: 2px solid #eee; margin:30px auto 50px; }
+.txt_center{ text-align:center;}
+.hide{ display:none;}
+.more{ width:100%; margin:30px auto 50px; text-align:center;}
+.more a{ display:block; background:#3DB7E2; color:#FFF; padding:10px 15px; border-radius:4px; display: inline-block; font: 16px "microsoft yahei";}
+
+
+.chromeframe{ position:absolute; top:0; z-index:99999; width:100%; text-align:center; background:#F0C36D;}
+.chromeframe a{ color:#000; font-weight:bold;}
+.chromeframe a:hover{ color:#f00}
+
+.header { height: 80px; background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0; _background: #6c6c6c; width: 100%; position: absolute; z-index: 10000; top: 0; left: 0; }
+.header .head { width: 1000px; margin: 0 auto; }
+.logo { padding-top: 15px; }
+.logo a{ display:inline-block; float:left;}
+.logo span{ float:left; display:block; width:50px; height:18px; background:url(../images/m_version.gif) no-repeat; text-indent:-999em;}
+.header li { float: left; font: 16px "microsoft yahei"; }
+.header li a { height: 77px; line-height: 77px; color: #eee; padding: 0 25px; display: inline-block; }
+.header li a:hover,.header li a.current { border-bottom: 3px #a2e7ff solid; color:#fff; }
+.header .login_box { display: block; background: #505050; margin: 24px 0; display: inline; border-radius: 3px; overflow: hidden; margin-left: 25px; }
+.header .login_box a { height: 30px; line-height: 30px; color: #FFF; }
+.header .login_box a:hover { background: #505050; border: none; }
+.header .login_box a.blue_btn:hover { background: #3DB7E2 }
+
+.blue_btn { background: #3DB7E2 }
+.header .menu{ position:relative;}
+.info_page{ background: rgba(140, 140, 140, 0.8) none repeat scroll 0 0; _background:f5f5f5;border-bottom:1px solid #dee2ea; position:fixed; _position:absolute;}
+.info_page li a{ color:#eee;}
+{ background:#d0d0d0}
+.cover{content: "";position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.2);}
+
+
+.login { position:absolute; right:0; top:100px; width: 300px; height: auto; margin:0; padding:10px; background:#fff; border:1px #cdcdcd solid; box-shadow:0 0 5px rgba( 0,0,0,0.5); border-radius:5px; }
+.login_title { border-bottom: 1px dashed #CCC; line-height: 30px; margin-bottom:15px;}
+.input_box { height: 40px; border-radius: 4px; border: 1px solid #cdcdcd; padding-left: 60px; color: #999; margin-bottom: 15px; overflow: hidden; }
+.input_box input { height: 39px; border: 0; width: 215px; color: #999; outline: none; font-size:14px; }
+.input_id { background: url(../images/login_id.jpg) 10px center no-repeat; }
+.input_pw { background: url(../images/login_pw.jpg) 10px center no-repeat; }
+.yzm { }
+.yzm input { height: 36px; border-radius: 4px; border: 1px solid #cdcdcd; color: #999; vertical-align: middle; text-align:center; width: 140px; font-size:14px; margin-right: 15px; }
+.yzm img { vertical-align: middle; cursor: pointer; }
+.login_button { margin-top: 20px; }
+.login_button input {background: #3DB7E2; border: 0; color: #fff; border-radius: 4px; padding: 10px 50px; font: 14px "microsoft yahei"; margin-right: 15px; cursor: pointer; }
+.login_button a { padding-right: 10px; }
+
+.pccode{ width:160px; height:240px; position:absolute; padding:40px 5px 0 20px; background:url(../images/code_bg.png) no-repeat; right:150px; top:105px;}
+.pccode p{ text-align:center; margin:6px 0; color:#f00;}
+
+.Validform_checktip {line-height: 20px;  padding:5px 0; overflow: hidden; color: #999; font-size: 12px; display: inline-block; }
+.Validform_checktip .warning{ width:16px; height:16px; display:inline-block; background:url(../images/icon.png) no-repeat 0 -90px; vertical-align:middle;margin-top: -.2em; margin-right:3px;}
+.Validform_right { color: #71B83D;  }
+.Validform_wrong { color: red; white-space: nowrap; }
+.red { color: red; }
+
+
+.footer { background: #ababab; padding: 25px 0; height: 60px; }
+.foot { width: 1000px; margin: 0 auto; }
+.footer_text { line-height: 30px; }
+.footer_text ul { width: 800px; float: left; }
+.footer_text li { padding-right: 25px; float: left; color: #333;font: 14px/30px "microsoft yahei"; }
+.footer_text li a { color: #333 }
+.footer_text li a:hover { color: #000; }
+.footer_text li span { width: 16px; height: 16px; display: inline-block; background: url(../images/foot_ico.png) no-repeat; _background-position: 0px 6px;  vertical-align: middle; margin-right: 5px; _padding-top:3px;}
+.footer_text li .ico2 { background-position: -16px 0; _background-position: -16px 6px; }
+.footer_text li .ico3 { background-position: -32px 0; _background-position: -32px 4px;  }
+.footer_text .code { float: right; position:relative;}
+.footer_text .wx_img { border: 5px solid #fff; width: 45px; height: 45px; cursor: pointer}
+.footer_text .wx_img_on { border: 2px solid #f8f8f8; box-shadow:0 0px 5px rgba(0, 0, 0, .6); width: 162px; height: 162px; position:absolute; top:-167px; right:55px; display:none;}
+
+
+
+#returnTop { _display: none; position: fixed; _position: absolute; z-index: 999; right: 15px; bottom: -200px; _bottom: auto; width: 36px; height: 65px; text-indent: -999px; overflow: hidden; background-image: url(../images/Top.png); _background-image: url(../images/Top.png); background-repeat: no-repeat; background-position: 0 0; transition: bottom 0.9s; -webkit-transition: bottom 0.9s; -moz-transition: bottom 0.9s; -o-transition: bottom 0.9s; }
+#returnTop:hover { background-position: 0 -65px; }
+

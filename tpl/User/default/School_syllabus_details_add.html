@@ -1,0 +1,91 @@
+<include file="Public:head"/>
+<include file="School:menu"/>
+<link rel="stylesheet" href="{dogcms::STATICS}/kindeditor/themes/default/default.css" />
+<link rel="stylesheet" href="{dogcms::STATICS}/kindeditor/plugins/code/prettify.css" />
+<script src="{dogcms::STATICS}/kindeditor/kindeditor.js" type="text/javascript"></script>
+<script src="{dogcms::STATICS}/kindeditor/lang/zh_CN.js" type="text/javascript"></script>
+<script src="{dogcms::STATICS}/kindeditor/plugins/code/prettify.js" type="text/javascript"></script>
+<script src="{dogcms::STATICS}/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="{dogcms::STATICS}/artDialog/plugins/iframeTools.js"></script>
+<script src="{dogcms::STATICS}/upyun.js"></script>
+
+ <script>
+
+var editor;
+KindEditor.ready(function(K) {
+editor = K.create('#info', {
+resizeType : 1,
+allowPreviewEmoticons : false,
+allowImageUpload : true,
+uploadJson : '/index.php?g=User&m=Upyun&a=kindedtiropic',
+items : [
+'source','undo','plainpaste','wordpaste','clearhtml','quickformat','selectall','fullscreen','fontname', 'fontsize','subscript','superscript','indent','outdent','|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline','hr']
+});
+
+});
+</script>
+<script>
+    jQuery(document).ready(function(){
+      jQuery("#formID").validationEngine();
+    });
+    </script>
+<style>
+.maroon{color: red;}
+</style>
+<div class="content">
+<div class="cLineB">
+  <h4>当前位置：微学校 >> <a href="{dogcms::U('School/syllabus_details',array('token'=>$token))}">课程管理</a> >> <if condition="$type eq 'edit'">编辑<else/>新增</if>课程表</h4>
+ </div>
+
+    <div class="msgWrap bgfc" style="margin-top:10px;">
+      <form class="form" id="formID" method="post" action="" target="_top" enctype="multipart/form-data">
+
+        <table class="userinfoArea" style=" margin:0;" border="0" cellspacing="0" cellpadding="0" width="100%">
+            <tbody>
+            
+           
+                <tr>
+                    <th width="120">选择班级:</th>
+                    <td>
+                    <select name="sy_id" id="sy_id" data-validation-engine="validate[required]"  data-errormessage-value-missing="必须选择所属班级">	
+					<option value="">请选择班级</option>
+                    <volist name="li_tcourse" id="list">
+                    <option value="{dogcms:$list['id']}" <if condition="$tcourse['sy_id'] eq $list['id']"> selected </if> >{dogcms:$list['bj_name']}:{dogcms:$list['t_name']}:{dogcms:$list['cd_name']}:{dogcms:$list['sd_name']}</option>
+                    </volist>
+                    </select>
+                    <span class="maroon">*</span>
+                    </td>
+                </tr>
+               
+                 <tr>
+                    <th width="120">上课日期:</th>
+                    <td>
+                    <input type="input" data-validation-engine="validate[required]"  data-errormessage-value-missing="上课日期必填" class="px" id="datetime" value="<if condition="$syllabus_details['datetime'] neq ''">{dogcms:$syllabus_details['datetime']}</if>" onClick="WdatePicker()" name="datetime">
+                    <input name="isnot" id="isnot" type="hidden" value="1" /> 
+                    <span class="maroon">*</span>
+                    </td>
+                </tr>
+               
+               
+                <tr>
+                   <th></th>
+                  
+                    <td>
+                  <button type="submit" name="button" class="btnGreen">保存</button>
+                    </td>
+                    </tr>
+                <tr>
+                     <th></th>
+                    <td>
+                   <a href="{dogcms::U('School/syllabus_details_list',array('token'=>session('token')))}" class="btnGray vm">取消</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+ 
+         
+   
+</div>
+
+<include file="Public:footer"/>

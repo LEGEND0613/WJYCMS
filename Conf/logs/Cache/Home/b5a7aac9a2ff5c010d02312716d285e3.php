@@ -1,0 +1,322 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title><?php echo C('site_name');?> - <?php echo C('site_name');?>-微信公共帐号营销平台</title>
+<meta name="keywords" content="<?php echo C('site_name');?>"/>
+<meta name="description" content="<?php echo C('site_name');?>"/>
+<link rel="stylesheet"  type="text/css"  href="./tpl/Home/weidogs1/common/css/pc_css.css">
+<link rel="stylesheet"  type="text/css"  href="./tpl/Home/weidogs1/common/css/pc_main.css">
+<link rel="shortcut icon" href="./tpl/Home/weidogs1/common/images/favicon.ico" />
+<script type="text/javascript" src="./tpl/Home/weidogs1/common/js/jquery.min.js"></script>
+<script type="text/javascript"  src="./tpl/Home/weidogs1/common/js/vkd-index.js"></script>
+<script type="text/javascript"  src="./tpl/Home/weidogs1/common/js/vkd-case.js"></script>
+</head>
+<body ><a id="returnTop"  href="javascript:;"  style="bottom: -200px;">回到顶部</a> 
+
+<div  class="header">
+	<div  class="head">
+		<div  class="logo fl">
+			<a  href="/" title="多用户微信营销服务平台">
+			<img  src="<?php echo C('site_logo');?>"  height="52"></a><span>beta2.0</span>
+			
+		</div>
+		<div  class="menu fr">
+			<form action="/index.php?m=Users&a=checklogin" method="post">
+				<div  class="login_fm hide">
+					<div  class="cover">
+					</div>
+									<div  class="pccode"  id="pccode">
+						<img  src="./tpl/Home/weidogs1/common/images/weixin.gif">
+						<p>扫码关注，自助审核</p>
+					</div>
+					<div  class="login">
+						<div  class="login_title">
+							<span  class="checktip Validform_checktip fr"></span><strong>会员登录</strong>
+						</div>
+						<form  method="post"   name="frm2">
+							<div  class="input_box input_id">
+								<input  name="username"  type="text"  placeholder="输入用户名">
+							</div>
+							<div  class="input_box input_pw">
+								<input  name="password"  type="password"  placeholder="输入密码">
+							</div>
+
+							<div  class="login_button">
+								<input  type="submit"  name="button"  id="button"  value="登录">
+							</div>
+						<input type="hidden" name="__hash__" value="c67f0cf77835603ab0197c950f24fcf0_10409b72e63e289dc0e369bde8bc76d8" /></form>
+					</div>
+				</div>
+
+			<input type="hidden" name="__hash__" value="c67f0cf77835603ab0197c950f24fcf0_10409b72e63e289dc0e369bde8bc76d8" /></form>
+
+			<ul  class="login_box fr">
+				<li><a  href="javascript:void(0);"   onclick="loginFmFun()" class="blue_btn"  id="go">登录</a></li>
+					<li><a href="/index.php?g=Home&m=Index&a=reg" >注册</a></li>
+							</ul>
+			<ul  class="fr"  id="link">
+				<li> <a href="/index.php?g=Home&m=Index&a=index"   > 首页 </a> </li>
+				<li> <a href="/index.php?g=Home&m=Index&a=about"   > 关于我们 </a> </li>
+				<li> <a href="/index.php?g=Home&m=Index&a=help"    > 帮助中心 </a> </li>				
+				
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+
+	function loginFmFun(){
+		$(".login_fm").show();
+	}
+
+	$(".cover").click(function(){
+		$(".login_fm").hide();
+		clearInterval(interval_id);
+	});
+
+
+window.onload = function() {
+
+	var aLink = document.getElementById("link").getElementsByTagName("a");
+	var cfg	 =	{
+					beginColor:0xeeeeee,//十六进制,字体开始的色
+					endColor:0xffffff,//十六进制,字体结束的色
+					duration:15//时长
+				};
+
+	for(var len = aLink.length; len--;) {
+		aLink[len].onmouseover = function() {
+			setColor(this, 0)
+		};
+		
+		aLink[len].onmouseout = function() {
+			setColor(this, cfg.duration)
+		};
+	}	
+	
+	function setColor(obj, num) {
+		clearInterval(obj.timer);
+		var i = num;
+		obj.timer = setInterval(function() {
+			obj.style.color = getColor(i)
+			num ? i-- : i++;
+			if(i < 0 || i > cfg.duration) clearInterval(obj.timer)
+		}, 30)
+	}
+	
+	function getColor(i) {
+		var br = Math.floor(cfg.beginColor/(256*256)),
+			bg = Math.floor((cfg.beginColor%(256*256))/256),
+			bb = Math.floor(cfg.beginColor%256),
+			er = Math.floor(cfg.endColor/(256*256)),
+			eg = Math.floor((cfg.endColor%(256*256))/256),
+			eb = Math.floor(cfg.endColor%256),
+			r = br+(er-br)*i/cfg.duration,
+			g = bg+(eg-bg)*i/cfg.duration,
+			b = bb+(eb-bb)*i/cfg.duration,
+			re="#" + toHex(r)+toHex(g)+toHex(b);
+			//console.log(re);
+		
+		return re;
+	}
+	
+	function toHex(n) {
+		n = Math.round(n);
+		n = (n.toString(16).length<2 ? "0"+n.toString(16) : n.toString(16)).toUpperCase();
+		return n;
+	}
+}
+
+
+$("#go").one("click",function(){
+    $("#pccode").animate({right:'+312px'},"slow")
+});
+
+</script>
+
+<script  type="text/javascript"  src="./tpl/Home/weidogs1/common/js/top.js"></script>
+
+<div  class="container">
+	<div  class="banner_box case_banner">
+		<h1>微信公众账号轻松接入，无限自定义图文回复！</h1>
+	</div>
+	<div  class="case_wkd">
+		<div  id="tabbox">
+			<ul  class="tabs"  id="tabs">
+				<h1>经典案例</h1>
+				<li  class="thistab"><a  >企业/公司</a></li>
+				<li><a  >汽车服务</a></li>
+				<li  class=""><a >旅游</a></li>
+				<li  class=""><a >娱乐/酒吧/KTV</a></li>
+				<li  class=""><a >教育/培训</a></li>
+				<li  class=""><a >房产/建筑</a></li>
+				<li  class=""><a>餐饮/酒店</a></li>
+				<li  class=""><a >美容/休闲</a></li>
+				<li  class=""><a >婚庆/摄影</a></li>
+				<li  class=""><a >医院</a></li>
+				<li><a >宠物医院</a></li>
+			</ul>
+			<ul  class="tab_conbox"  id="tab_conbox">
+				<li  class="tab_con"  style="display: list-item;">
+					<div  class="case_li">
+						<div  class="title">
+							孚德
+						</div>
+						<div  class="img">
+							<img  src="./tpl/Home/weidogs1/common/images/fude.jpg">
+						</div>
+						<div  class="desc">
+							孚德是国际足联2014年巴西世界杯吉祥物官方授权商,这是第一个中国企业直接和国际足联签订的，授权产品如此重要（吉祥物）、授权范围如此广泛（全球）的合作协议。
+						</div>
+					</div>
+					<div  class="case_li">
+						<div  class="title">
+							周黑鸭
+						</div>
+						<div  class="img">
+							<img  src="./tpl/Home/weidogs1/common/images/zhouheiya.jpg">
+						</div>
+						<div  class="desc">
+							湖北周黑鸭食品有限公司是一家专业从事鸭类、鹅类、鸭副产品和素食产品等熟卤制品生产的品牌企业，其前身为“武汉世纪周黑鸭食品有限公司”。
+						</div>
+					</div>
+					<div  class="case_li">
+						<div  class="title">
+							方派
+						</div>
+						<div  class="img">
+							<img  src="./tpl/Home/weidogs1/common/images/fangpai.jpg">
+						</div>
+						<div  class="desc">
+							方派，是深圳阿达电子公司的企业品牌，2011年登陆央视企业阿达电子公司旗下品牌，曾荣获国家多家家电企业金奖。公司是以设计、开发、销售及系统服务的电子开发设计为主的高科技企业、自主研究的方派移动电源，方派充电宝，目前在市场具有独特的技术和优于同类产品，打造方派世界知名品牌。成就“方派，诺贝尔品质”。
+						</div>
+					</div>
+					<div  class="case_li">
+						<div  class="title">
+							瑞红
+						</div>
+						<div  class="img">
+							<img  src="./tpl/Home/weidogs1/common/images/ruihong.jpg">
+						</div>
+						<div  class="desc">
+							瑞红，由深圳瑞合投资发展有限公司与美国知名珠宝PAJ集团于2007年合资成立，以“中国红”文化为品牌核心，以底蕴深厚的中国祥瑞经典元素为设计灵感，融合现代时尚设计风格。独具东方魅力的珠宝艺术珍品，不仅蕴涵着东方女性的古典美，更散发着现代的时尚魅力，温婉典雅，大气高贵。
+						</div>
+					</div>
+					<div  class="case_li">
+						<div  class="title">
+							FABBRI法布芮
+						</div>
+						<div  class="img">
+							<img  src="./tpl/Home/weidogs1/common/images/fabbri.jpg">
+						</div>
+						<div  class="desc">
+							意大利FABBRI公司成立于1905年，在意大利是最有名，也是历史最悠久的冰淇淋、烘焙原料、咖啡类专用糖浆以及饮品类专用糖浆的制造厂商，其所生产的冰淇淋、蛋糕原料产品，在意大利市场占有率达60%以上，在全欧洲市场占有率更高达50%，而咖啡类和饮品类的糖浆产品在意大利的市场拥有超过90%的占有率。
+						</div>
+					</div>
+					<div  class="case_li">
+						<div  class="title">
+							爱康驿站
+						</div>
+						<div  class="img">
+							<img  src="./tpl/Home/weidogs1/common/images/aikang.jpg">
+						</div>
+						<div  class="desc">
+							爱康公司创立于2007年元月，创始人总经理何义隆先后服务过良爽、舒爽、朋乐舒等汉方卫生棉传销公司的[ 总经理] 职务，前后九年历史，专精于中药萃取奈米化抑菌技术，更于2009年创新研发最新第五代- 台湾爱康护理超透气抗菌卫生巾。
+						</div>
+					</div>
+				</li>
+				<li  class="tab_con"  style="display: none;"> 资料添加中，敬请期待... </li>
+				<li  class="tab_con"  style="display: none;"> 资料添加中，敬请期待... </li>
+				<li  class="tab_con"  style="display: none;"> 资料添加中，敬请期待... </li>
+				<li  class="tab_con"  style="display: none;"> 资料添加中，敬请期待... </li>
+				<li  class="tab_con"  style="display: none;"> 资料添加中，敬请期待... </li>
+				<li  class="tab_con"  style="display: none;"> 资料添加中，敬请期待... </li>
+				<li  class="tab_con"  style="display: none;"> 资料添加中，敬请期待... </li>
+				<li  class="tab_con"  style="display: none;"> 资料添加中，敬请期待... </li>
+				<li  class="tab_con"  style="display: none;"> 资料添加中，敬请期待... </li>
+				<li  class="tab_con"  style="display: none;"> 资料添加中，敬请期待... </li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script  type="text/javascript">
+$(document).ready(function() {
+	jQuery.jqtab = function(tabtit,tab_conbox,shijian) {
+		$(tab_conbox).find("li").hide();
+		$(tabtit).find("li:first").addClass("thistab").show(); 
+		$(tab_conbox).find("li:first").show();
+	
+		$(tabtit).find("li").bind(shijian,function(){
+		  $(this).addClass("thistab").siblings("li").removeClass("thistab"); 
+			var activeindex = $(tabtit).find("li").index(this);
+			$(tab_conbox).children().eq(activeindex).show().siblings().hide();
+			return false;
+		});
+	
+	};
+	/*调用方法：*/
+	$.jqtab("#tabs","#tab_conbox","click");
+	
+	$.jqtab("#tabs2","#tab_conbox2","mouseenter");
+	
+});
+</script> 
+<script  type="text/javascript">
+$(document).ready(function() {
+	jQuery.jqtab = function(tabtit,tab_conbox,shijian) {
+		$(tab_conbox).find("li").hide();
+		$(tabtit).find("li:first").addClass("thistab").show(); 
+		$(tab_conbox).find("li:first").show();
+	
+		$(tabtit).find("li").bind(shijian,function(){
+		  $(this).addClass("thistab").siblings("li").removeClass("thistab"); 
+			var activeindex = $(tabtit).find("li").index(this);
+			$(tab_conbox).children().eq(activeindex).show().siblings().hide();
+			return false;
+		});
+	
+	};
+	/*调用方法如下：*/
+	$.jqtab("#tabs","#tab_conbox","click");
+	
+	$.jqtab("#tabs2","#tab_conbox2","mouseenter");
+	
+});
+</script> 
+<div  class="footer"  id="link">
+	<div  class="foot">
+		<div class="footer_text">
+			<ul>
+				<li><a>服务条款</a></li>
+				<li><a>意见反馈</a></li>
+				<li><a>公司简介</a></li>
+				<li><span></span><?php echo C('site_email');?></li>
+				<li><span  class="ico2"></span>18605283199</li>
+				<li>Copyright &copy; 2016 <?php echo C('site_name');?> 版权所有 All Rights Reserved.  沪ICP备1235454号-1</li>
+			</ul>
+		<div  class="code">
+			<img  src="./tpl/Home/weidogs1/common/images/weixin.gif"  width="162"  height="162"  class="wx_img"  id="wx_img_1">
+			<img  src="./tpl/Home/weidogs1/common/images/weixin.gif"  width="162"  height="162"  class="wx_img_on"  id="wx_img_2">
+		</div>
+		</div>
+	</div>
+</div>
+
+ 
+<script  type="text/javascript"  src="./tpl/Home/weidogs1/common/js/Validform_v5.3.2_min.js"></script> 
+<script  type="text/javascript">
+$(".demoform").Validform({
+	tiptype:3,
+	datatype:{
+		"telephone": /^[\d+\-?]+$/
+	}
+});
+$(function(){
+	$("#wx_img_1").bind("mouseenter",function(){
+		$("#wx_img_2").show();
+	});
+	$("#wx_img_1").bind("mouseleave",function(){
+		$("#wx_img_2").hide();
+	});
+});
+</script>
+</body></html>

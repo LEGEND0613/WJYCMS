@@ -1,0 +1,1213 @@
+[ 2016-05-03T08:24:12+08:00 ] 121.42.0.35 /
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.067386s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: cms.yulihome.comnomsite D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.050783s ]
+NOTIC: [8] Undefined index: cms.yulihome.com D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 376 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_customs` [ RunTime:0.048830s ]
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.088870s ]
+SQL: SELECT * FROM `tp_images` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 1 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 5 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 6 ) LIMIT 1   [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: showNotice D:\webset\CMS\dogcms\Lib\Action\Home\IndexAction.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.014649s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.025391s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.020509s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.060549s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.030274s ]
+SQL: SELECT * FROM `tp_news` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.520527s ]
+INFO: [ view_template ] --END-- [ RunTime:0.012696s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.532247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046876s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.580100s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.581077s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.592796s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.594749s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020509s ]
+SQL: SHOW COLUMNS FROM `tp_susceptible` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_susceptible` LIMIT 1   [ RunTime:0.000976s ]
+SQL: SELECT `word` FROM `tp_susceptible` WHERE ( `state` = 1 )  [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/0/6/067efd6ffbb9b42e963ddba7e754f7e8.php): No such file or directory D:\webset\CMS\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.655298s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.658228s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007813s ]
+
+[ 2016-05-03T12:03:07+08:00 ] 180.175.91.239 /
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.067385s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: cms.yulihome.comnomsite D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.026368s ]
+NOTIC: [8] Undefined index: cms.yulihome.com D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 376 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_customs` [ RunTime:0.031251s ]
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.060549s ]
+SQL: SELECT * FROM `tp_images` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 3 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 5 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 6 ) LIMIT 1   [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: showNotice D:\webset\CMS\dogcms\Lib\Action\Home\IndexAction.class.php 第 91 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.017579s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.019532s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.015626s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.012696s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.008790s ]
+SQL: SELECT * FROM `tp_news` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = null ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.292980s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.294933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037111s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.332044s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.333997s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.334974s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.335950s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005860s ]
+SQL: SHOW COLUMNS FROM `tp_susceptible` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_susceptible` LIMIT 1   [ RunTime:0.001953s ]
+SQL: SELECT `word` FROM `tp_susceptible` WHERE ( `state` = 1 )  [ RunTime:0.000976s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/0/6/067efd6ffbb9b42e963ddba7e754f7e8.php): No such file or directory D:\webset\CMS\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.377944s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.380874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004883s ]
+
+[ 2016-05-03T12:03:19+08:00 ] 180.175.91.239 /index.php?m=Users&a=checklogin
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Constant STATICS already defined D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.025392s ]
+SQL: SELECT `viptime` FROM `tp_users` WHERE ( `username` = '1111' ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `username` = '1111' ) LIMIT 1   [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.004883s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.001953s ]
+SQL: UPDATE `tp_users` SET `diynum`='0',`connectnum`='0',`activitynum`='0' WHERE ( `id` = 13 ) [ RunTime:0.000000s ]
+SQL: UPDATE `tp_users` SET `lasttime`='1462248199',`lastloginmonth`='5',`lastip`='180.175.91.239' WHERE ( `id` = 13 ) [ RunTime:0.000977s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.046877s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.047854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024415s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.072269s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.073245s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.074222s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.075198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `tp_susceptible` [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_susceptible` LIMIT 1   [ RunTime:0.000977s ]
+SQL: SELECT `word` FROM `tp_susceptible` WHERE ( `state` = 1 )  [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/0/6/067efd6ffbb9b42e963ddba7e754f7e8.php): No such file or directory D:\webset\CMS\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.084964s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run AccessCount Behavior [ RunTime:-0.085941s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-05-03T12:03:21+08:00 ] 180.175.91.239 /index.php?g=User&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2048] Declaration of IndexAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\webset\CMS\dogcms\Lib\Action\User\IndexAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_customs` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 5 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.003906s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_function` [ RunTime:0.026369s ]
+SQL: SELECT `func` FROM `tp_user_group` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`funname` FROM `tp_function` WHERE ( `status` = 1 )  [ RunTime:0.002930s ]
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.026368s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `token` = null ) AND ( `uid` = 13 ) LIMIT 1   [ RunTime:0.001954s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.000976s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: width D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 199 行.
+SQL: SHOW COLUMNS FROM `tp_fuwuuser` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_fuwuuser` WHERE ( `token` = null )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 227 行.
+SQL: SHOW COLUMNS FROM `tp_weixin_account` [ RunTime:0.013672s ]
+SQL: SELECT * FROM `tp_weixin_account` WHERE type=1 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_user_group`  [ RunTime:0.000977s ]
+SQL: SELECT `func` FROM `tp_user_group` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `func` FROM `tp_user_group` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000976s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_wxuser` WHERE ( `uid` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `uid` = 13 ) LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_diymen_set` [ RunTime:0.027345s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `token` = 'dzqmpt1457533711' ) LIMIT 1   [ RunTime:0.001953s ]
+NOTIC: [8] Undefined offset: 1 D:\webset\CMS\dogcms\Lib\Action\User\IndexAction.class.php 第 65 行.
+SQL: SELECT * FROM `tp_weixin_account` WHERE ( `type` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`appid`,`appsecret`,`type`,`authorizer_access_token`,`authorizer_refresh_token`,`authorizer_expires`,`winxintype` FROM `tp_wxuser` WHERE appid='wx89994cf92ef3e454' LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] curl_setopt(): You must pass either an object or an array with the CURLOPT_HTTPHEADER, CURLOPT_QUOTE, CURLOPT_HTTP200ALIASES and CURLOPT_POSTQUOTE arguments D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 275 行.
+NOTIC: [2] curl_setopt(): You must pass either an object or an array with the CURLOPT_HTTPHEADER, CURLOPT_QUOTE, CURLOPT_HTTP200ALIASES and CURLOPT_POSTQUOTE arguments D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 275 行.
+NOTIC: [8] Undefined index: errcode D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 292 行.
+NOTIC: [8] Undefined index: errcode D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 143 行.
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_renew` WHERE id>0 ORDER BY id DESC LIMIT 0,5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.624047s ]
+INFO: [ view_template ] --END-- [ RunTime:0.032228s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 80 行.
+NOTIC: [8] Use of undefined constant Common - assumed 'Common' D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 142 行.
+NOTIC: [8] Undefined variable: oauthUrl D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 207 行.
+NOTIC: [8] Undefined index: error D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 238 行.
+NOTIC: [8] Undefined index: goldbuy D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 248 行.
+NOTIC: [8] Undefined variable: oauthUrl D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 261 行.
+NOTIC: [8] Undefined variable: demo D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 272 行.
+NOTIC: [8] Undefined variable: thisAD D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 294 行.
+NOTIC: [8] Undefined variable: alert D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 330 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.656275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083988s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.740263s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.742216s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.743193s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.744169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005859s ]
+SQL: SHOW COLUMNS FROM `tp_susceptible` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_susceptible` LIMIT 1   [ RunTime:0.000976s ]
+SQL: SELECT `word` FROM `tp_susceptible` WHERE ( `state` = 1 )  [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/0/6/067efd6ffbb9b42e963ddba7e754f7e8.php): No such file or directory D:\webset\CMS\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.751982s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+SQL: SHOW COLUMNS FROM `tp_access_count` [ RunTime:0.004883s ]
+SQL: SELECT * FROM `tp_access_count` WHERE ( `module` = 'user' ) AND ( `controller` = 'index' ) AND ( `action` = 'index' ) AND ( `token` = 'alltoken' ) AND ( `create_time` >= 1462118400 ) LIMIT 1   [ RunTime:0.064455s ]
+INFO: Run AccessCount Behavior [ RunTime:-0.753935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.073245s ]
+
+[ 2016-05-03T12:04:37+08:00 ] 180.175.91.239 /index.php?g=User&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+NOTIC: [2048] Declaration of IndexAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\webset\CMS\dogcms\Lib\Action\User\IndexAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.012696s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_customs` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 5 ) LIMIT 1   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.001953s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_function` [ RunTime:0.002929s ]
+SQL: SELECT `func` FROM `tp_user_group` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`funname` FROM `tp_function` WHERE ( `status` = 1 )  [ RunTime:0.001954s ]
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `token` = null ) AND ( `uid` = 13 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.000976s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: width D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 199 行.
+SQL: SHOW COLUMNS FROM `tp_fuwuuser` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_fuwuuser` WHERE ( `token` = null )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 227 行.
+SQL: SHOW COLUMNS FROM `tp_weixin_account` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_weixin_account` WHERE type=1 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_user_group`  [ RunTime:0.000000s ]
+SQL: SELECT `func` FROM `tp_user_group` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `func` FROM `tp_user_group` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_wxuser` WHERE ( `uid` = 13 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `uid` = 13 ) LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_diymen_set` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `token` = 'dzqmpt1457533711' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Undefined offset: 1 D:\webset\CMS\dogcms\Lib\Action\User\IndexAction.class.php 第 65 行.
+SQL: SELECT * FROM `tp_weixin_account` WHERE ( `type` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`appid`,`appsecret`,`type`,`authorizer_access_token`,`authorizer_refresh_token`,`authorizer_expires`,`winxintype` FROM `tp_wxuser` WHERE appid='wx89994cf92ef3e454' LIMIT 1   [ RunTime:0.000976s ]
+NOTIC: [2] curl_setopt(): You must pass either an object or an array with the CURLOPT_HTTPHEADER, CURLOPT_QUOTE, CURLOPT_HTTP200ALIASES and CURLOPT_POSTQUOTE arguments D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 275 行.
+NOTIC: [8] Undefined index: errcode D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 292 行.
+NOTIC: [8] Undefined index: errcode D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 196 行.
+NOTIC: [8] Undefined index: errcode D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 196 行.
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.003907s ]
+SQL: SELECT * FROM `tp_renew` WHERE id>0 ORDER BY id DESC LIMIT 0,5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.318372s ]
+INFO: [ view_template ] --END-- [ RunTime:0.012696s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 80 行.
+NOTIC: [8] Use of undefined constant Common - assumed 'Common' D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 142 行.
+NOTIC: [8] Undefined variable: oauthUrl D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 207 行.
+NOTIC: [8] Undefined index: error D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 238 行.
+NOTIC: [8] Undefined index: goldbuy D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 248 行.
+NOTIC: [8] Undefined variable: oauthUrl D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 261 行.
+NOTIC: [8] Undefined variable: demo D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 272 行.
+NOTIC: [8] Undefined variable: thisAD D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 294 行.
+NOTIC: [8] Undefined variable: alert D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 330 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.331068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037110s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.368178s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.369155s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.371108s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.372085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004883s ]
+SQL: SHOW COLUMNS FROM `tp_susceptible` [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_susceptible` LIMIT 1   [ RunTime:0.006836s ]
+SQL: SELECT `word` FROM `tp_susceptible` WHERE ( `state` = 1 )  [ RunTime:0.000000s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/0/6/067efd6ffbb9b42e963ddba7e754f7e8.php): No such file or directory D:\webset\CMS\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.387710s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001954s ]
+INFO: [ app_end ] --START--
+SQL: SHOW COLUMNS FROM `tp_access_count` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_access_count` WHERE ( `module` = 'user' ) AND ( `controller` = 'index' ) AND ( `action` = 'index' ) AND ( `token` = 'alltoken' ) AND ( `create_time` >= 1462118400 ) LIMIT 1   [ RunTime:0.022462s ]
+INFO: Run AccessCount Behavior [ RunTime:-0.389664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.029298s ]
+
+[ 2016-05-03T12:04:38+08:00 ] 180.175.91.239 /index.php?g=User&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2048] Declaration of IndexAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\webset\CMS\dogcms\Lib\Action\User\IndexAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_customs` [ RunTime:0.001954s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 2 ) LIMIT 1   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 5 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_customs` WHERE ( `agentid` = 0 ) AND ( `type` = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.001953s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_function` [ RunTime:0.001953s ]
+SQL: SELECT `func` FROM `tp_user_group` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`funname` FROM `tp_function` WHERE ( `status` = 1 )  [ RunTime:0.000977s ]
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [8] Undefined variable: allCloseFunc D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 110 行.
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.001954s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `token` = null ) AND ( `uid` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.001953s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: width D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 199 行.
+SQL: SHOW COLUMNS FROM `tp_fuwuuser` [ RunTime:0.001954s ]
+SQL: SELECT * FROM `tp_fuwuuser` WHERE ( `token` = null )  [ RunTime:0.000976s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\webset\CMS\dogcms\Lib\Action\UserAction.class.php 第 227 行.
+SQL: SHOW COLUMNS FROM `tp_weixin_account` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_weixin_account` WHERE type=1 LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_user_group`  [ RunTime:0.000000s ]
+SQL: SELECT `func` FROM `tp_user_group` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `func` FROM `tp_user_group` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_wxuser` WHERE ( `uid` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `uid` = 13 ) LIMIT 0,5   [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_diymen_set` [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_diymen_set` WHERE ( `token` = 'dzqmpt1457533711' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 D:\webset\CMS\dogcms\Lib\Action\User\IndexAction.class.php 第 65 行.
+SQL: SELECT * FROM `tp_weixin_account` WHERE ( `type` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id`,`appid`,`appsecret`,`type`,`authorizer_access_token`,`authorizer_refresh_token`,`authorizer_expires`,`winxintype` FROM `tp_wxuser` WHERE appid='wx89994cf92ef3e454' LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_renew` WHERE id>0 ORDER BY id DESC LIMIT 0,5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.075199s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 80 行.
+NOTIC: [8] Use of undefined constant Common - assumed 'Common' D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 142 行.
+NOTIC: [8] Undefined variable: oauthUrl D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 207 行.
+NOTIC: [8] Undefined index: error D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 238 行.
+NOTIC: [8] Undefined index: goldbuy D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 248 行.
+NOTIC: [8] Undefined variable: oauthUrl D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 261 行.
+NOTIC: [8] Undefined variable: demo D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 272 行.
+NOTIC: [8] Undefined variable: thisAD D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 294 行.
+NOTIC: [8] Undefined variable: alert D:\webset\CMS\Conf\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 330 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.076175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046877s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.123052s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.125005s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.125982s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.128912s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007813s ]
+SQL: SHOW COLUMNS FROM `tp_susceptible` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_susceptible` LIMIT 1   [ RunTime:0.000977s ]
+SQL: SELECT `word` FROM `tp_susceptible` WHERE ( `state` = 1 )  [ RunTime:0.000976s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/0/6/067efd6ffbb9b42e963ddba7e754f7e8.php): No such file or directory D:\webset\CMS\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.136724s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001954s ]
+INFO: [ app_end ] --START--
+SQL: SHOW COLUMNS FROM `tp_access_count` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_access_count` WHERE ( `module` = 'user' ) AND ( `controller` = 'index' ) AND ( `action` = 'index' ) AND ( `token` = 'alltoken' ) AND ( `create_time` >= 1462118400 ) LIMIT 1   [ RunTime:0.000977s ]
+INFO: Run AccessCount Behavior [ RunTime:-0.138678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006836s ]
+
+[ 2016-05-03T12:27:33+08:00 ] 122.96.42.52 /index.php?g=Wap&m=School&a=index&token=dzqmpt1457533711&diymenu=1&code=021y7sFm0Q8hcg15RzFm0PVwFm0y7sFx&state=
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://cms.yulihome.com' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Constant STATICS already defined D:\webset\CMS\dogcms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `token` = 'dzqmpt1457533711' ) LIMIT 1   [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2048] Non-static method getUserInfoModule::index() should not be called statically, assuming $this from incompatible context D:\webset\CMS\dogcms\Lib\Action\WapAction.class.php 第 147 行.
+NOTIC: [8] Undefined index: ali D:\webset\CMS\dogcms\Lib\Action\WapAction.class.php 第 149 行.
+NOTIC: [8] Undefined index: token_oauthed_dzqmpt1457533711 D:\webset\CMS\dogcms\Lib\Action\WapAction.class.php 第 159 行.
+NOTIC: [8] Undefined index: token_openid_dzqmpt1457533711 D:\webset\CMS\dogcms\Lib\Action\WapAction.class.php 第 160 行.
+SQL: SHOW COLUMNS FROM `tp_weixin_account` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_weixin_account` WHERE ( `type` = 1 ) LIMIT 1   [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.001954s ]
+SQL: UPDATE `tp_wxuser` SET `type`='0' WHERE 1 [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: wecha_id D:\webset\CMS\dogcms\Lib\Action\WapAction.class.php 第 200 行.
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_weixin_account` WHERE ( `type` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: wecha_id D:\webset\CMS\dogcms\Lib\Action\WapAction.class.php 第 251 行.
+NOTIC: [8] Undefined index: wecha_id D:\webset\CMS\dogcms\Lib\Action\WapAction.class.php 第 251 行.
+NOTIC: [8] Undefined variable: fansInfo D:\webset\CMS\dogcms\Lib\Action\WapAction.class.php 第 252 行.
+NOTIC: [2] curl_setopt(): You must pass either an object or an array with the CURLOPT_HTTPHEADER, CURLOPT_QUOTE, CURLOPT_HTTP200ALIASES and CURLOPT_POSTQUOTE arguments D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 275 行.
+NOTIC: [8] Undefined index: errcode D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 292 行.
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `fakeopenid` = 'oaQjaskBxVbpoVbAoDO1b3r8mJPk' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] curl_setopt(): You must pass either an object or an array with the CURLOPT_HTTPHEADER, CURLOPT_QUOTE, CURLOPT_HTTP200ALIASES and CURLOPT_POSTQUOTE arguments D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 275 行.
+NOTIC: [8] Undefined index: errcode D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 292 行.
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `wecha_id` = 'oaQjaskBxVbpoVbAoDO1b3r8mJPk' ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.001953s ]
+SQL: UPDATE `tp_userinfo` SET `wechaname`='Microspace@王俊�\�',`sex`='1',`portrait`='http://wx.qlogo.cn/mmopen/9f23FdeMnCmwmibZ78pYmnoC82icic57C7cxvTSbguF2z2XKZNia5qVg2m0Sic8YbtBce9hjlNFLnxB0sGg8ibPaSsjlibvbetwvU2X/0',`token`='dzqmpt1457533711',`wecha_id`='oaQjaskBxVbpoVbAoDO1b3r8mJPk',`city`='松江',`province`='上海',`truename`='Microspace@王俊�\�',`fakeopenid`='oaQjaskBxVbpoVbAoDO1b3r8mJPk' WHERE ( `id` = 2 ) [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: yundabao D:\webset\CMS\dogcms\Lib\Action\WapAction.class.php 第 413 行.
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `wecha_id` = 'oaQjaskBxVbpoVbAoDO1b3r8mJPk' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_wechat_group_list` [ RunTime:0.003907s ]
+SQL: SELECT * FROM `tp_wechat_group_list` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `openid` = 'oaQjaskBxVbpoVbAoDO1b3r8mJPk' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_home` [ RunTime:0.008789s ]
+SQL: SELECT * FROM `tp_home` WHERE ( `token` = 'dzqmpt1457533711' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_catemenu` [ RunTime:0.038088s ]
+SQL: SELECT * FROM `tp_catemenu` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.020509s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.001954s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.004883s ]
+SQL: SELECT * FROM `tp_company` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.021486s ]
+SQL: SELECT * FROM `tp_weixin_account` WHERE ( `type` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] curl_setopt(): You must pass either an object or an array with the CURLOPT_HTTPHEADER, CURLOPT_QUOTE, CURLOPT_HTTP200ALIASES and CURLOPT_POSTQUOTE arguments D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 275 行.
+NOTIC: [8] Undefined index: errcode D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 292 行.
+NOTIC: [8] Undefined index: errcode D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 196 行.
+NOTIC: [8] Undefined index: errcode D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 196 行.
+NOTIC: [2] curl_setopt(): You must pass either an object or an array with the CURLOPT_HTTPHEADER, CURLOPT_QUOTE, CURLOPT_HTTP200ALIASES and CURLOPT_POSTQUOTE arguments D:\webset\CMS\dogcms\Lib\ORG\apiOauth.class.php 第 275 行.
+SQL: SELECT `fakeopenid` FROM `tp_userinfo` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `wecha_id` = 'oaQjaskBxVbpoVbAoDO1b3r8mJPk' ) LIMIT 1   [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_school_set_index` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_school_set_index` WHERE ( `token` = 'dzqmpt1457533711' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_school_cat` [ RunTime:0.008789s ]
+SQL: SELECT `url`,icon as img,`name` FROM `tp_school_cat` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `is_show` = '1' ) ORDER BY sort desc,id desc  [ RunTime:0.008789s ]
+SQL: SELECT * FROM `tp_school_set_index` WHERE ( `token` = 'dzqmpt1457533711' ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_photo_list` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_photo_list` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `pid` = 1 ) ORDER BY sort desc  [ RunTime:0.018556s ]
+NOTIC: [8] Undefined index: url D:\webset\CMS\dogcms\Lib\Action\Wap\SchoolAction.class.php 第 57 行.
+NOTIC: [8] Undefined index: url D:\webset\CMS\dogcms\Lib\Action\Wap\SchoolAction.class.php 第 57 行.
+NOTIC: [8] Undefined index: url D:\webset\CMS\dogcms\Lib\Action\Wap\SchoolAction.class.php 第 57 行.
+NOTIC: [8] Undefined index: url D:\webset\CMS\dogcms\Lib\Action\Wap\SchoolAction.class.php 第 57 行.
+NOTIC: [8] Undefined index: url D:\webset\CMS\dogcms\Lib\Action\Wap\SchoolAction.class.php 第 57 行.
+SQL: SELECT * FROM `tp_home` WHERE ( `token` = 'dzqmpt1457533711' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `url`,icon as img,`name` FROM `tp_school_cat` WHERE ( `token` = 'dzqmpt1457533711' ) AND ( `is_show` = '1' ) ORDER BY sort desc,id desc  [ RunTime:0.000977s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.990273s ]
+INFO: [ view_template ] --END-- [ RunTime:0.034181s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: zd D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 4 行.
+NOTIC: [8] Undefined variable: home D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 289 行.
+NOTIC: [8] Undefined variable: home D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 454 行.
+NOTIC: [8] Undefined variable: home D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 571 行.
+NOTIC: [8] Undefined variable: home D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 687 行.
+NOTIC: [2] Division by zero D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 788 行.
+NOTIC: [8] Undefined index: type D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 788 行.
+NOTIC: [8] Undefined index: bid D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 788 行.
+NOTIC: [8] Undefined index: wecha_id D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 788 行.
+NOTIC: [2] Division by zero D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 789 行.
+NOTIC: [8] Undefined index: type D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 789 行.
+NOTIC: [8] Undefined index: bid D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 789 行.
+NOTIC: [8] Undefined index: wecha_id D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 789 行.
+NOTIC: [2] Division by zero D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 790 行.
+NOTIC: [8] Undefined index: type D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 790 行.
+NOTIC: [8] Undefined index: bid D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 790 行.
+NOTIC: [8] Undefined index: wecha_id D:\webset\CMS\Conf\logs\Cache\Wap\99d76a8a86813bff4e98e9effcce2ff2.php 第 790 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.024454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082034s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.106488s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.108441s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.109418s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.110394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004883s ]
+SQL: SHOW COLUMNS FROM `tp_susceptible` [ RunTime:0.001954s ]
+SQL: SELECT * FROM `tp_susceptible` LIMIT 1   [ RunTime:0.000976s ]
+SQL: SELECT `word` FROM `tp_susceptible` WHERE ( `state` = 1 )  [ RunTime:0.000977s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/0/6/067efd6ffbb9b42e963ddba7e754f7e8.php): No such file or directory D:\webset\CMS\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+NOTIC: [8] Undefined variable: word_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+NOTIC: [8] Undefined variable: xing_array D:\webset\CMS\dogcms\Lib\ORG\Susceptible.class.php 第 45 行.
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.119184s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_end ] --START--
+SQL: SHOW COLUMNS FROM `tp_access_count` [ RunTime:0.001954s ]
+SQL: SELECT * FROM `tp_access_count` WHERE ( `module` = 'wap' ) AND ( `controller` = 'school' ) AND ( `action` = 'index' ) AND ( `token` = 'dzqmpt1457533711' ) AND ( `create_time` >= 1462118400 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: DELETE FROM `tp_access_count` WHERE ( `module` = 'wap' ) AND ( `controller` = 'school' ) AND ( `action` = 'index' ) AND ( `token` = 'dzqmpt1457533711' ) AND ( `create_time` < 1456201653 ) [ RunTime:0.000976s ]
+SQL: INSERT INTO `tp_access_count` (`module`,`controller`,`action`,`token`,`create_time`,`update_time`) VALUES ('wap','school','index','dzqmpt1457533711','1462249653','1462249653') [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_access_count` WHERE ( `module` = 'wap' ) AND ( `controller` = 'school' ) AND ( `action` = 'index' ) AND ( `token` = 'alltoken' ) AND ( `create_time` >= 1462204800 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: DELETE FROM `tp_access_count` WHERE ( `module` = 'wap' ) AND ( `controller` = 'school' ) AND ( `action` = 'index' ) AND ( `token` = 'alltoken' ) AND ( `create_time` < 1456201653 ) [ RunTime:0.000976s ]
+SQL: INSERT INTO `tp_access_count` (`module`,`controller`,`action`,`token`,`create_time`,`update_time`) VALUES ('wap','school','index','alltoken','1462249653','1462249653') [ RunTime:0.000000s ]
+INFO: Run AccessCount Behavior [ RunTime:-1.121137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011719s ]
+

@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+.banner_box { width: 100%; height: auto; overflow: hidden; background: url(../images/banner_bg.jpg) repeat-x center top;}
+.banner { height:650px; width: 1000px; margin: 0 auto; position: relative; overflow:hidden;}
+.banner .text {height:260px; top:280px; left: 550px; text-align: right; position: absolute; z-index: 3 }
+.banner .text p{ margin:0 0 20px; color: #fff; font: 18px/32px "microsoft yahei"; text-shadow: 1px 0 2px #333333; text-align:left; }
+.banner .text h4 { margin:0 0 20px; color: #fff; font: 32px/38px "microsoft yahei"; text-shadow: 1px 0 2px #333333; font-weight: bold; text-align:left;}
+.banner .text .start { display: block; position:absolute; bottom:0; width:180px; height:50px; background:url(../images/icon.png) right 0 }
+.banner .pic { position: absolute; top:120px; left: 0; }
+.banner .frame { position: absolute; bottom: 0; left: 50%; z-index: 2; margin-left: -140px; width: 280px; }
+.banner .frame .changing-over { float: left; margin: 1px 0 1px 1px; width: 280px; height: 43px; background-position: 0 -67px; text-align: center; }
+.banner .frame .changing-over a { display: inline-block; margin: 13px 10px 13px 0; width: 13px; height: 13px; background: url(../images/icon.png) -13px 0; }
+.banner .frame .changing-over a.now { background: url(../images/icon.png) 0 0; }
+
+
+.list_function { width:1000px; height:auto; margin:0 auto; padding:25px 0 0;}
+.list_function li{ padding-bottom: 15px;}
+.list_function .img{ width:600px; height:auto; overflow:hidden; padding:25px;}
+.list_function .fl.img{padding-left: 0}
+.list_function .fr.img{padding-right: 0}
+.list_function .desc{ width:300px; height:auto; overflow:hidden; padding:100px 25px 25px;}
+.list_function .desc h2{ display:block; font:25px/30px "microsoft yahei"; color:#000; font-weight: bold;}
+.list_function .desc p{ display:block; font:18px/25px "microsoft yahei"; color:#666}
+.list_function .desc .button{}
+.list_function .desc .button a{ display:block; float:left; padding:10px 15px; background:#3DB7E2; color:#FFF;border-radius: 5px;}
+
+.lc_box { padding:10px 0 0; text-align:center; background:#f4f4f4;}
+
+
+.about_banner{ background:url(../images/about.jpg) repeat-x center top; height:480px;}
+.about_banner h1{font-size: 40px;text-align: center;padding-top:120px;color: #FFFEFE; font-weight:normal}
+.about_banner span{color: #fff;width: 700px;display: block;margin: 16px auto;font-size: 24px;background-color: rgba(0, 0, 0, 0.47);padding: 18px 30px;border-radius: 30px;text-align: center; margin-top:60px;}
+
+.about_wkd { width:1000px; margin:0 auto; padding:50px 0;}
+.about_wkd li { clear: both; padding-bottom:30px; font: 14px "microsoft yahei"; border-bottom: 1px dotted #CCC; }
+.about_wkd li:last-of-type{ border:none; padding-bottom:0;}
+.about_wkd li img { vertical-align: middle; }
+.about_wkd li h3 { font-size:35px; font-weight:normal; color: #000; padding-bottom: 20px; text-align:center; }
+.about_wkd li h4 { font-size:20px; font-weight:normal; color: #333; margin-top:25px; }
+.about_wkd li .text p{ line-height:25px; text-indent:28px;}
+
+
+.guide_banner{ background:#1a3045; height:250px;}
+.guide_banner h1{font-size: 40px;text-align: center;padding-top:120px;color: #FFFEFE; font-weight:normal}
+.guide_wkd{ width:1000px; margin:0 auto; padding:50px 0; overflow:hidden;}
+.guide_wkd h1{ font-size:18px; line-height:50px; text-align:left; color:#000; border-bottom:1px #CCC dashed; }
+.guide_wkd .ico_list{ width:102%; overflow:hidden; margin-bottom:30px;}
+.guide_wkd .ico_list li{padding:15px 10px 5px; float:left; border-bottom:1px #CCC dashed; border-right:1px #CCC dashed; width:313px; height:90px; margin-top:-1px;}
+.guide_wkd .ico_list li .ico{ float:left; width:80px; height:80px;}
+.guide_wkd .ico_list li .ico img{width:80px; height:80px;}
+.guide_wkd .ico_list li h2{ font-size:15px; color:#333; font-weight:bold;}
+.guide_wkd .ico_list li .desc{ float:left; width:220px; padding-left:10px;}
+.guide_wkd .ico_list li .desc p{ width:220px;height:44px;text-overflow: ellipsis; overflow:hidden;}
+
+#tabbox {overflow:hidden; margin:0 auto; }
+.tab_conbox { width:770px; float:right;}
+.tab_con { display:none; }
+.tab_con h2{padding:10px 0;font-size: 24px;margin-bottom: 20px;border-bottom: 2px solid #DEDEDE; font-weight:normal; color:#000;}
+.tab_con p{color: #666;font-size: 14px;line-height: 28px;}
+.tab_con p img{ float:left; margin-right:20px;}
+.tab_con p.img_desc img{ width:33%; height:auto; margin:0}
+.tab_con .app_title{font-size: 18px;border-bottom: 2px solid #DEDEDE;padding:20px 0 10px; color:#333;}
+
+.tabs { width:200px; height:auto; overflow:hidden; background:#F6F6F6; float:left; border:1px #F6F6F6 solid;}
+.tabs h1{ border-bottom: 1px solid #DEDEDE; padding-left:20px;}
+.tabs li { width:100%; padding:14px 0; float:left;border-bottom: 1px solid #DEDEDE;border-top: 1px solid white;}
+.tabs li:last-of-type{ border-bottom:none;}
+.tabs li a { display: block; padding: 0 20px; outline: none; }
+.tabs li a:hover {  }
+.tabs .thistab,  .tabs .thistab a,.tabs .thistab a:hover { background: #fff; color: #3DB7E2}
+.tab_con {font-size: 14px; line-height:175%; }
+
+
+
+.list_case {position: relative;width: 1000px;margin: 0 auto;}
+.list_case .case_main{ width:106%;}
+.list_case li {font-size: 40px;color: #999;text-align: center;width:160px;height:280px;padding: 0;display: inline;float: left; margin-right:50px;}
+.list_case li a{display: block;width: 160px;margin: auto;position: relative;box-shadow: 0 10px 5px rgba(0, 0, 0, .3);border-top: 1px solid #ECECEC;border-radius: 5px 5px 0 0;}
+.list_case li a::after{position: absolute;bottom: -29px;left: 0;overflow: hidden;background: #fff;width: 100%;height: 15px;content: '';border-radius: 50%;box-shadow: 0 -10px 3px #fff;}
+.list_case li img{width: 150px;height: 230px;margin: 5px auto;display: inline;}
+
+.case_wkd{ width:1000px; margin:0 auto; padding:50px 0; overflow:hidden;}
+.case_banner{ background:#0089D1; height:250px;}
+.case_banner h1{font-size: 40px;text-align: center;padding-top:120px;color: #FFFEFE; font-weight:normal}
+.case_wkd h1 {font-size: 18px;line-height: 50px;text-align: left;color: black;}
+.case_wkd .case_li{ border:1px #eee solid; margin-bottom:20px; padding:15px;}
+.case_wkd .case_li .title{ padding:0 0 10px; font-size:18px; color:#000;}
+.case_wkd .case_li .img{ width:100%; height:auto; overflow:hidden;}
+.case_wkd .case_li .img img{ float:left}
+.case_wkd .case_li .desc{ width:100%; padding-top:10px;}
+
+
+.help_menu { height: 60px; overflow: hidden; }
+.help_menu a { height: 32px; padding: 0 10px; display: inline-block; border-radius: 4px; background: url(../images/button_bj.jpg); line-height: 32px; border: 1px solid #d4d4d4; box-shadow: 1px 1px 2px #e7e7e7; margin-right: 10px; position: relative; }
+.help_menu a:hover, .help_menu .cur { border: 1px solid #92c929; background: url(../images/menu_bg.jpg); }
+.help_menu .cur i { width: 30px; height: 17px; display: block; position: absolute; left: 50%; margin-left: -15px; bottom: -28px; background: url(../images/help_ico.jpg); }
+.search_box { width: 232px; float: right; background: #fff; height: 25px; border: 1px solid #d7d7d7; }
+.search_box input { border: 0; color: #999; padding-left: 10px; }
+.help_list { padding-bottom: 30px; }
+.help_list li { width: 437px; float: left; display: inline; margin: 35px 0 0 35px; }
+.help_list li img { margin: 10px 0; }
+
+.c_box { padding:130px 0 50px; min-height:400px;}
+.c_box .register_link{ width:500px; padding-top:120px; text-align:center;}
+.register { width: 1000px; margin: 0 auto; }
+.register_title { border-bottom: 1px dashed #CCC; line-height: 30px; }
+.register_group { margin-top: 20px; }
+.register_label { float: left; width: 100px; padding-top: 5px; text-align: right; font-family: "microsoft yahei"; font-size: 14px; color: #333 }
+.register_group .registers { margin-left: 120px; }
+.registers input { width: 260px; height: 30px; display: inline-block; font-size: 14px; color: #555555; line-height: 20px; vertical-align: middle; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; border: 1px solid #cdcdcd; background: #fff; padding: 4px 6px; }
+.registers select { height: 40px; display: inline-block; font-size: 14px; color: #555555; line-height: 20px; vertical-align: middle; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; border: 1px solid #cdcdcd; background: #fff; padding: 4px 6px; }
+.registers .maroon { color: #535069; padding-left: 2px; }
+.registers .help_text { font-family: "microsoft yahei"; font-size: 14px; color: #999; }
+.registers span img { vertical-align: middle; margin: 0; padding: 0; }
+.register_btn { margin: 20px 0 0 120px; width: 255px; height: 50px; text-align:center; }
+.register_btn .button {background: #3DB7E2;border: 0;color: white;border-radius: 4px;padding: 10px 50px;font: 14px "microsoft yahei";margin-right: 15px;cursor: pointer;}

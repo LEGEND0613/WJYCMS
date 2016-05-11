@@ -1,0 +1,82 @@
+<include file="Public:head"/>
+<include file="School:menu"/>
+
+<script src="{dogcms::RES}/js/date/WdatePicker.js"></script>
+
+<script>
+    window.onload=function(){
+        document.forms[0].reset();
+        placeFo();
+    }
+    function placeFo(){
+        document.forms[0].elements[0].focus();
+    }
+</script>
+<div class="content">
+
+          <div class="cLineB">
+              <h4 class="left">当前位置：微学校 >> 班级管理</h4>             
+              <a href="{dogcms::U('School/curriculum_add',array('token'=>$token,'type'=>'curriculum'))}"class="right btnGreen vm" style="margin-top:-2px">班级添加</a>
+              <div class="clr"></div>
+          </div>
+          <div class="cLineD">
+
+ </div>
+          <div class="msgWrap">
+            <TABLE class="ListProduct" border="0" cellSpacing="0" cellPadding="0" width="100%">
+              <THEAD>
+                <TR>
+                <TH>班级</TH>
+                <TH>姓名</TH>             
+                <TH>科目</TH>
+                <TH>学期</TH>
+                <!--
+                	作者：390750213@qq.com
+                	时间：2016-03-24
+                	描述：              
+                <TH>时段</TH>
+                <TH>场地</TH>             
+                 -->
+                <TH >操作</TH>
+                </TR>
+              </THEAD>
+              <TBODY>
+                <TR></TR>
+<volist id="list" name="market">
+                <TR>
+                  <TD>{dogcms:$list['bj_name']}</TD>
+                  <TD>{dogcms:$list['tname']}</TD>
+                  <TD>{dogcms:$list['km_name']}</TD>
+                  <TD>{dogcms:$list['xq_name']}</TD>
+                  <!--
+                	作者：390750213@qq.com
+                	时间：2016-03-24
+                	描述：
+                  <TD>{dogcms:$list['sd_name']}</TD>
+                  <TD>{dogcms:$list['cd_name']}</TD>
+                   -->
+                  <TD>
+<a href="{dogcms::U('School/curriculum_add',array('token'=>$token,'id'=>$list['id'],'bj_id'=>$list['bj_id'],'type'=>'edit'))}"><font color="red">编辑</font></a> &nbsp;&nbsp;
+
+<a class="btn" href="{dogcms::U('School/del_item',array('token'=>$token,'id'=>$list['id'],'deltype'=>'curriculum'))}" onclick="return(confirm('确定要删除吗？'))"  title="删除"><font color="#CCC7C7">删除</font></a>
+                 </TD>
+                </TR>
+</volist>
+              </TBODY>
+            </TABLE>
+          </div>
+          <div class="cLine">
+            <div class="pageNavigator right">
+                <div class="pages">{dogcms:$page}</div>
+              </div>
+            <div class="clr"></div>
+          </div>
+        </div>
+
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+<include file="Public:footer"/>

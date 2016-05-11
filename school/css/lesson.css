@@ -1,0 +1,286 @@
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+
+}
+@media (min-width: 858px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 780px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 702px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 724px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 623px) {
+    html {
+        font-size: 8px;
+    }
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #40C199;
+  font-family:Microsoft YaHei;
+  text-align: center;
+}
+.small {
+  font-size: 12px; /* 75% of the baseline */
+}
+
+.large {
+  font-size: 20px; /* 125% of the baseline */
+}
+.body{
+  margin: 0 auto;
+  text-align: center;
+  float: left;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.title_img{
+  margin-top: 25%;
+}
+.logo{
+  width: 50%;
+}
+.roundBox{
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 120%;
+  width: 50%;
+  text-align: center;
+  color: white;
+  padding: 2px;
+  margin-top: 40%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.title{
+  font-size: 250%;
+  margin-top: 5%;
+  text-align: center;
+  color: white;
+}
+.line{
+  border-right: 1px solid white;
+}
+.banner_img{
+  width: 100%;
+}
+.nav{
+  height: 40px;
+  line-height: 40px;
+  font-size: 120%;
+  font-size: 100%;
+  color: white;
+}
+.nav .home{
+  float: left;
+  width: 25%;
+  border-right: 1px solid white;
+}
+.nav .teacher{
+  float: left;
+  width: 25%;
+  border-right: 1px solid white;
+}
+.nav .lesson{
+  float: left;
+  width: 25%;
+  border-right: 1px solid white;
+}
+.nav .lessons{
+  float: left;
+  width: 25%;
+  border-right: 1px solid white;
+}
+.nav .my{
+  float: left;
+  width: 25%;
+}
+.nav img{
+  width: 25px;
+}
+.content{
+  background-color: white;
+  height: 800px;
+  overflow: auto;
+}
+.body h4{
+  font-size: 80%;
+  margin-top: 0px;
+}
+.img2{
+  width: 46%;
+  margin-right: 1%;
+  display: inline-block;
+  position: relative; 
+  margin-bottom: 2%;
+}
+.img2 img{
+  width: 100%;
+}
+.img2 h4{
+  position: absolute; 
+  bottom: 0;  
+  width: 100%; 
+  color: white; 
+  font-size: 80%; 
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  padding-top: 2%; 
+  margin-bottom: 0px;
+}
+.img1_2_1{
+  background-color: #40C199;
+  width: 32.6%;
+  padding-top: 1%;
+  display: inline-block;
+  color: white;
+}
+.img1_2_1 img{
+  width: 30px;
+}
+.img2_2_1{
+  background-color: white;
+  width: 32.6%;
+  padding-top: 1%;
+  display: inline-block;
+  color: white;
+}
+.img2_2_1 img{
+  width: 50px;
+}
+.img1_2_2{
+  background-color: #3E3A39;
+  width: 32.5%;
+  padding-top: 1%;
+  display: inline-block;
+  color: white;
+}
+.img1_2_2 img{
+  width: 30px;
+}
+.img2_2_2{
+  background-color: white;
+  width: 32.5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  display: inline-block;
+  color: white;
+}
+.img2_2_2 img{
+  width: 50px;
+}
+.img1_2_5{
+  background-color: #40C199;
+  width: 30%;
+  margin-right: 1%;
+  display: inline-block;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  color: white;
+  margin-bottom: 2%;
+  font-size: 60%;
+}
+.img1_2_5 img{
+  width: 60px;
+}
+.img1_2_3{
+  width: 46%;
+  margin-right: 1%;
+  display: inline-block;
+  margin-bottom: 2%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  color: white;
+  background-color: #99AD34;
+}
+.img1_2_3 img{
+  width: 40px;
+}
+.img1_2_4{
+  width: 46%;
+  margin-right: 1%;
+  display: inline-block;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  margin-bottom: 2%;
+  color: white;
+  background-color: #029BA3;
+}
+.img1_2_4 img{
+  width: 40px;
+}
+.nav_up{
+  height: 40px;
+  line-height: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 120%;
+  width: 100%;
+  background: url(../images/arrow.png) left no-repeat;
+  background-size: 30px auto;
+}
+.arrow{
+  width: 20px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.grey{
+  background-color: #cccccc;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  text-align: left;
+  padding-left: 10px;
+  float: left;
+}
+.lesson {
+  position: relative;
+}
+.lesson img{
+  width: 100%;
+  margin-bottom: 1%;
+}
+.lesson h4{
+  position: absolute;
+    bottom: 20px;
+    width: 100%;
+    color: white;
+    font-size: 160%;
+    padding-top: 40%;
+    margin-top: 10px;
+}
+.lesson h5{
+  position: absolute;
+    bottom: 10px;
+    width: 100%;
+    color: white;
+    font-size: 80%;
+    padding-top: 40%;
+}
+.white{
+  background-color: white;
+}
+.lineheight{
+  line-height: 20px;
+}

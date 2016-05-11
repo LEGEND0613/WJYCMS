@@ -1,0 +1,28 @@
+<include file="Frame:header"/>
+<div class="columntitle">用户组管理</div>
+<div style="border:1px solid #E9EFF7;margin-top:10px;">
+<div class="oper" style="border:none"><a href="?g=Agent&m=Users&a=groupSet" class="add">添加</a></div>
+
+
+  <table cellspacing="1" cellpadding="1" class="listtable">
+		<tr class="summary-title">
+		    <td>ID</td>
+		    <td>名称</td>
+			<td>允许添加公众号数量</td>
+			<td>每月请求数</td>
+			<td>操作</td>
+		</tr>
+<dogcmslist array="list" foreach="list">
+    <tr class="tdbg" onMouseOver="this.className='tdbg-dark';" onMouseOut="this.className='tdbg';" style="height:29px;">
+        <td>{dogcms:$list.id}</td>
+		<td>{dogcms:$list.name}</td>
+		<td>{dogcms:$list.wechat_card_num}</td>
+		<td>{dogcms:$list.connectnum}</td>
+		<td><a href="?g=Agent&m=Users&a=groupSet&id={dogcms:$list.id}">修改</a> <a href="###" onclick="if(confirm('确定删除吗')){location.href='?g=Agent&m=Users&a=delGroup&id={dogcms:$list.id}'}">删除</a></td>
+    </tr>
+</dogcmslist>
+</table>
+
+</div>
+<div class="pages">{dogcms:$page}</div>
+<include file="Frame:footer"/>

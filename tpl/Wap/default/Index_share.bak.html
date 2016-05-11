@@ -1,0 +1,31 @@
+
+	<if condition="ACTION_NAME eq 'index'">
+		<script type="text/javascript">
+			window.shareData = {  
+					"moduleName":"Index",
+					"moduleID": "0",
+					"imgUrl": "{dogcms:$homeInfo.picurl}", 
+					"timeLineLink": "{dogcms::C('site_url')}{dogcms::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token']))}",
+					"sendFriendLink": "{dogcms::C('site_url')}{dogcms::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token']))}",
+					"weiboLink": "{dogcms::C('site_url')}{dogcms::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token']))}",
+					"tTitle": "{dogcms:$homeInfo.title}",
+					"tContent": "{dogcms:$homeInfo.info}"
+				};
+		</script>
+	<else />
+		<script type="text/javascript">
+			window.shareData = {  
+				"moduleName":"NewsList",
+				"moduleID": "{dogcms:$_GET['classid']|intval}",
+				"imgUrl": "{dogcms:$thisClassInfo.img}", 
+				"timeLineLink": "{dogcms::C('site_url')}{dogcms::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token'],'classid'=>$_GET['classid']))}",
+				"sendFriendLink": "{dogcms::C('site_url')}{dogcms::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token'],'classid'=>$_GET['classid']))}",
+				"weiboLink": "{dogcms::C('site_url')}{dogcms::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token'],'classid'=>$_GET['classid']))}",
+				"tTitle": "{dogcms:$thisClassInfo.name}",
+				"tContent": "{dogcms:$thisClassInfo.info}"
+			};
+		</script>	
+	
+	</if>
+	
+{dogcms:$shareScript}
